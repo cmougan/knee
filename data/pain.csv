@@ -1,6 +1,7 @@
-date,pain, leg_fatigue, total_fatigue
-27-3-2021, 4, 2, 2
-28-3-2021, 7, 10, 10
-29-3-2021, 6, 8, 8
-30-3-2021, 5, 6, 6
-31-3-2021, 3, 3, 4
+date,pain, leg_fatigue, total_fatigue, nsaids, colageno,
+27-3-2021, 4, 2, 2, False, False
+28-3-2021, 7, 10, 10, False, False
+29-3-2021, 6, 8, 8, False, False
+30-3-2021, 5, 6, 6,False, False
+31-3-2021, 3, 3, 4,False, False
+1-4-2021 , 2, 0, 1, True, True
