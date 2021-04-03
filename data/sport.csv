@@ -1,4 +1,4 @@
-date,sport, total_intensity, knee_intensity,
+date,sport, total_intensity, knee_intensity, time
 27-3-2021, CF, 10, 10, 60
 28-3-2021, None, 0, 0, 0
 29-3-2021, None, 0, 0, 0
@@ -8,3 +8,5 @@ date,sport, total_intensity, knee_intensity,
 1-4-2021, Kite, 4, 3, 90
 2-4-2021, Yoga, 2, 1, 30
 2-4-2021, Swim, 2, 1, 30
+3-4-2021, Yoga, 1, 1, 30
+3-4-2021, Kite, 5, 7, 90
