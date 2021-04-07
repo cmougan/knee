@@ -7,6 +7,7 @@
 ### Resonacias Magnéticas
 #### 10/11/2020
 **Hallazgos**
+
 No se identifica patrón de edema óseo.\
 Los ligamentos cruzados y colaterales están integros.\
 No se observan alteraciones significativas los meniscos.\
@@ -20,6 +21,7 @@ El tendón rotuliano es de aspecto normal. \
 No existe derrame articular en cantidad valorable.\
 
 **Conclusión**
+
 Condomalacia rotuliana grado II-III. Engrosamiento del tendón cuadricipital.\
 No existen alteraciones significativas del tendón rotuliano. \
 Lesión condral de inicio en la meseta tibial externa.\
@@ -48,3 +50,6 @@ Lesión condral de inicio en la meseta tibial externa.\
 ![Evolución Dolor](images/dolor_diario.png "Title")
 
 ![Relacion Cargas y Dolor](images/dolor_cargas_diario.png "Title")
+
+## Carga deportiva
+![Deporte Acumulado](images/deporte.png "Title")
