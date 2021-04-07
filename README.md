@@ -45,3 +45,6 @@ Lesión condral de inicio en la meseta tibial externa.\
 ### Evaluación de la carga
 
 ## Análisis Exploratorio de Datos
+![Evolución Dolor](images/dolor_diario.png "Title")
+
+![Relacion Cargas y Dolor](images/dolor_cargas_diario.png "Title")
