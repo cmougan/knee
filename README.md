@@ -52,4 +52,7 @@ Lesión condral de inicio en la meseta tibial externa.\
 ![Relacion Cargas y Dolor](images/dolor_cargas_diario.png "Title")
 
 ## Carga deportiva
-![Deporte Acumulado](images/deporte.png "Title")
+<!-- [Deporte Acumulado](images/deporte.png "Title") -->!
+
+![Deporte Acumulado](images/dolor_int_rodilla.png "Title")
+
