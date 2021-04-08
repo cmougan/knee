@@ -2,8 +2,6 @@
 
 ## Cuadro Clínico
 
-### Historial Deportivo
-
 ### Resonacias Magnéticas
 #### 10/11/2020
 **Hallazgos**
