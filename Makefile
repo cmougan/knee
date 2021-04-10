@@ -19,3 +19,7 @@ make notebook_memory_usage:
 make install_some_packages:
 	conda install pip
 	pip install jedi==0.17.2
+
+make run_script:
+	jupyter nbconvert --to script ExploratoryDataAnalysis.ipynb
+	python ExploratoryDataAnalysis.py
