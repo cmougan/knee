@@ -49,7 +49,7 @@ Pasadas las primeras 4 semanas el dolor vuelve de forma diferente y con mayor in
 ### Evaluación de la fatiga muscular.
 ```
 1: Músculo levemente activo y tenso
-2: Músculo levemente activo y tenso
+2: Músculo activo y tenso
 3: Leve tensión muscular y pérdida de la movilidad. 
 5: Agujetas
 10: Cuesta salir de la cama.
