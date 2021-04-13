@@ -66,3 +66,6 @@ Pasadas las primeras 4 semanas el dolor vuelve de forma diferente y con mayor in
 
 ![Deporte Acumulado](images/dolor_int_rodilla.png "Title")
 
+## Correlacción de variables
+
+![Interacción entre variables](images/corr.png "Title")
