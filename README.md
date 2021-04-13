@@ -4,7 +4,7 @@
 
 ### Resonacias Magnéticas
 #### 10/11/2020
-<center>**Hallazgos**</center>
+__Hallazgos__
 
 No se identifica patrón de edema óseo.\
 Los ligamentos cruzados y colaterales están integros.\
@@ -18,7 +18,7 @@ Se observa un engrosamiento del tendón cuadricipital descartándose la presenci
 El tendón rotuliano es de aspecto normal. \
 No existe derrame articular en cantidad valorable.\
 
-<center>**Conclusión**</center>
+**Conclusión**
 
 Condomalacia rotuliana grado II-III. Engrosamiento del tendón cuadricipital.\
 No existen alteraciones significativas del tendón rotuliano. \
@@ -62,7 +62,7 @@ Pasadas las primeras 4 semanas el dolor vuelve de forma diferente y con mayor in
 ![Relacion Cargas y Dolor](images/dolor_cargas_diario.png "Title")
 
 ## Carga deportiva
-<!-- [Deporte Acumulado](images/deporte.png "Title") -->!
+<!-- [Deporte Acumulado](images/deporte.png "Title") -->
 
 ![Deporte Acumulado](images/dolor_int_rodilla.png "Title")
 
