@@ -69,3 +69,10 @@ Pasadas las primeras 4 semanas el dolor vuelve de forma diferente y con mayor in
 ## Correlacción de variables
 
 ![Interacción entre variables](images/corr.png "Title")
+
+
+#### Bibliografía
+
+[1] Cirugía de implante de condrocitos autólogos en rodilla: https://fondoscience.com/reaca/vol28-fasc1-num71/fs2002012-cirugia-implante-condrocitos-autologos-rodilla
+
+[2] Role of Platelet-Rich Plasma in Articular Cartilage Injury and Disease https://www.thieme-connect.com/products/ejournals/html/10.1055/s-0034-1384672

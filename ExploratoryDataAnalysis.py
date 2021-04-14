@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[7]:
+# In[1]:
 
 
 import numpy as np
@@ -20,7 +20,7 @@ rcParams['figure.figsize'] = 16,8
 warnings.filterwarnings('ignore')
 
 
-# In[8]:
+# In[2]:
 
 
 pain = pd.read_csv('data/pain.csv').drop(columns='Unnamed: 6')
@@ -29,7 +29,7 @@ pain['date'] = pd.to_datetime(pain['date'] ,dayfirst=True)#.dt.strftime('%d/%m/%
 pain = pain.set_index('date')
 
 
-# In[104]:
+# In[3]:
 
 
 sports = pd.read_csv('data/sport.csv')
@@ -41,7 +41,7 @@ sports = sports.set_index('date')
 
 # ## Images
 
-# In[106]:
+# In[4]:
 
 
 plt.figure()
@@ -51,7 +51,7 @@ plt.savefig('images/dolor_diario.png')
 plt.show()
 
 
-# In[107]:
+# In[5]:
 
 
 plt.figure()
@@ -63,7 +63,7 @@ plt.savefig('images/dolor_cargas_diario.png')
 plt.show()
 
 
-# In[108]:
+# In[6]:
 
 
 aux = sports.drop(columns="time").groupby(["date"]).agg("sum").reset_index()
@@ -79,7 +79,7 @@ plt.savefig('images/dolor_int_total.png')
 plt.show()
 
 
-# In[109]:
+# In[7]:
 
 
 aux = sports.drop(columns="time").groupby(["date"]).agg("sum").reset_index()
@@ -95,27 +95,27 @@ plt.savefig('images/dolor_int_rodilla.png')
 plt.show()
 
 
-# In[110]:
+# In[8]:
 
 
 sports
 
 
-# In[122]:
+# In[9]:
 
 
 aux = sports.groupby(["date",'sport']).agg("sum").reset_index()
 aux = pd.merge(pain.reset_index(),aux,on='date')
 
 
-# In[128]:
+# In[10]:
 
 
 aux2 = pd.merge(aux[aux['sport'] =='Kite'],pain,on='date',how='right').fillna(0)
 aux3 = pd.merge(aux[aux['sport'] =='CF'],pain,on='date',how='right').fillna(0)
 
 
-# In[129]:
+# In[11]:
 
 
 fig, (ax1, ax2, ax3) = plt.subplots(3)
@@ -125,10 +125,30 @@ ax2.bar(aux2.date,aux2.time)
 ax3.bar(aux3.date,aux3.time)
 
 
-# In[ ]:
+# In[13]:
 
 
 
+aux = pd.merge(sports.reset_index(),pain.reset_index(),on='date')
+
+aux.groupby(['date','sport']).sum().reset_index()
+# Compute the correlation matrix
+corr = aux.corr()
+
+# Generate a mask for the upper triangle
+mask = np.triu(np.ones_like(corr, dtype=bool))
+
+# Set up the matplotlib figure
+f, ax = plt.subplots(figsize=(11, 9))
+plt.title('Matriz de correlacion entre variables')
+# Generate a custom diverging colormap
+cmap = sns.diverging_palette(230, 20, as_cmap=True)
+
+# Draw the heatmap with the mask and correct aspect ratio
+sns.heatmap(corr, mask=mask, cmap=cmap, vmax=.3, center=0,
+            square=True, linewidths=.5, cbar_kws={"shrink": .5})
+plt.savefig('images/corr.png')
+plt.show()
 
 
 # In[ ]:
