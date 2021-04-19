@@ -49,6 +49,7 @@ plt.title('Evolución diaria del dolor')
 sns.lineplot(y = pain.pain, x =pain.index )
 plt.savefig('images/dolor_diario.png')
 plt.show()
+plt.close()
 
 
 # In[5]:
@@ -61,6 +62,7 @@ sns.lineplot(y = pain.leg_fatigue, x =pain.index,label = 'Carga muscular tren in
 sns.lineplot(y = pain.total_fatigue, x =pain.index,label = 'Carga muscular total')
 plt.savefig('images/dolor_cargas_diario.png')
 plt.show()
+plt.close()
 
 
 # In[6]:
@@ -77,6 +79,7 @@ plt.ylabel('Intensidad Total/2')
 plt.plot(aux.date,aux.pain,c='r')
 plt.savefig('images/dolor_int_total.png')
 plt.show()
+plt.close()
 
 
 # In[7]:
@@ -93,6 +96,7 @@ plt.ylabel('Intensidad Total/2')
 plt.plot(aux.date,aux.pain,c='r')
 plt.savefig('images/dolor_int_rodilla.png')
 plt.show()
+plt.close()
 
 
 # In[8]:
@@ -123,9 +127,10 @@ fig.suptitle('Vertically stacked subplots')
 ax1.plot(aux.date,aux.pain)
 ax2.bar(aux2.date,aux2.time)
 ax3.bar(aux3.date,aux3.time)
+plt.close()
 
 
-# In[13]:
+# In[12]:
 
 
 
@@ -149,6 +154,13 @@ sns.heatmap(corr, mask=mask, cmap=cmap, vmax=.3, center=0,
             square=True, linewidths=.5, cbar_kws={"shrink": .5})
 plt.savefig('images/corr.png')
 plt.show()
+plt.close()
+
+
+# In[ ]:
+
+
+
 
 
 # In[ ]:
