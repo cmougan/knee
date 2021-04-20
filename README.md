@@ -1,3 +1,7 @@
+[![black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
+    	/github/pipenv/locked/python-version/:user/:repo
 # Tratamiento de dolor de condromalacia
 
 ## Cuadro Clínico
@@ -59,12 +63,14 @@ Pasadas las primeras 4 semanas el dolor vuelve de forma diferente y con mayor in
 ## Análisis Exploratorio de Datos
 ![Evolución Dolor](images/dolor_diario.png "Title")
 
-![Relacion Cargas y Dolor](images/dolor_cargas_diario.png "Title")
-
 ## Carga deportiva
 <!-- [Deporte Acumulado](images/deporte.png "Title") -->
 
 ![Deporte Acumulado](images/dolor_int_rodilla.png "Title")
+
+![Relacion Cargas y Dolor](images/dolor_cargas_diario.png "Title")
+
+
 
 ## Correlacción de variables
 
