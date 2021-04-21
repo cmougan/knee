@@ -1,7 +1,6 @@
 [![black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-    	/github/pipenv/locked/python-version/:user/:repo
 # Tratamiento de dolor de condromalacia
 
 ## Cuadro Clínico
@@ -27,6 +26,17 @@ No existe derrame articular en cantidad valorable.\
 Condomalacia rotuliana grado II-III. Engrosamiento del tendón cuadricipital.\
 No existen alteraciones significativas del tendón rotuliano. \
 Lesión condral de inicio en la meseta tibial externa.\
+
+### Podología (Análisis de la pisada)
+ Por Rafael Gonzales Clinici San Sebastian de los Reyes
+ ![Análisi de la pisada](images/podologo/heatmap_pisada.jpeg "Title")
+ 
+ Se observa que el mayor punto de apoyo es en el talón del pié izquierdo. 
+ Del pie derecho la zona del metatarso del dedo gordo falta presión.
+ 
+ _Tratamiento:_ Añadir una leve correción en la plantilla del pie derecho. (A los zapatos de CF)
+ Más imágenes en (images/podologo)
+ 
 
 ### Tratamiento
 
