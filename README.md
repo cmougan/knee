@@ -34,8 +34,8 @@ Lesión condral de inicio en la meseta tibial externa.\
  Se observa que el mayor punto de apoyo es en el talón del pié izquierdo. 
  Del pie derecho la zona del metatarso del dedo gordo falta presión.
  
- _Tratamiento:_ Añadir una leve correción en la plantilla del pie derecho. (A los zapatos de CF)
- Más imágenes en (images/podologo)
+__Tratamiento:__ Añadir una leve correción en la plantilla del pie derecho[21/4/2021]. (A los zapatos de CF)
+ Más imágenes en (_images/podologo_)
  
 
 ### Tratamiento
