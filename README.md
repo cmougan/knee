@@ -6,6 +6,7 @@
 
 ## Cuadro Clínico
 
+
 ### Resonacias Magnéticas
 #### 10/11/2020
 __Hallazgos__
