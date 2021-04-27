@@ -68,7 +68,9 @@ Pasadas las primeras 4 semanas el dolor vuelve de forma diferente y con mayor in
 2: Músculo activo y tenso
 3: Leve tensión muscular y pérdida de la movilidad. 
 5: Agujetas
-10: Cuesta salir de la cama.
+7: Músculo hiper fatigado que con calentamiento vuelve a una normalidad funcional.
+9: Músculo fatigado que aún con calentamiento no vuelve a su normalidad funcional
+10: Rotura de fibras grave.
 ```
 
 
