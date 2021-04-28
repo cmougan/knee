@@ -76,13 +76,14 @@ Pasadas las primeras 4 semanas el dolor vuelve de forma diferente y con mayor in
 
 ## Análisis Exploratorio de Datos
 ![Evolución Dolor](images/dolor_diario.png "Title")
+![Evolución Dolor](images/dolor_semanal.png "Title")
 
 ## Carga deportiva
 <!-- [Deporte Acumulado](images/deporte.png "Title") -->
 
 ![Deporte Acumulado](images/dolor_int_rodilla.png "Title")
 
-![Relacion Cargas y Dolor](images/dolor_cargas_diario.png "Title")
+<!--- ![Relacion Cargas y Dolor](images/dolor_cargas_diario.png "Title")--->
 
 
 
