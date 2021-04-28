@@ -12,12 +12,31 @@ from matplotlib import rcParams
 import seaborn as sns
 
 plt.style.use('seaborn-whitegrid')
+sns.set(style='whitegrid', color_codes=True)
+
+
 rcParams['axes.labelsize'] = 14
 rcParams['xtick.labelsize'] = 12
 rcParams['ytick.labelsize'] = 12
 rcParams['figure.figsize'] = 16,8
 
 warnings.filterwarnings('ignore')
+
+
+# In[ ]:
+
+
+def gradientbars(bars):
+    grad = np.atleast_2d(np.linspace(0, 1, 256)).T
+    ax = bars[0].axes
+    lim = ax.get_xlim() + ax.get_ylim()
+    for bar in bars:
+        bar.set_zorder(1)
+        bar.set_facecolor("none")
+        x, y = bar.get_xy()
+        w, h = bar.get_width(), bar.get_height()
+        ax.imshow(grad, extent=[x, x + w, y, y + h], aspect="auto", zorder=0)
+    ax.axis(lim)
 
 
 # In[2]:
@@ -50,6 +69,35 @@ sns.lineplot(y = pain.pain, x =pain.index )
 plt.savefig('images/dolor_diario.png')
 plt.show()
 plt.close()
+
+
+# In[ ]:
+
+
+
+
+
+# In[47]:
+
+
+pain.head()
+
+
+# In[59]:
+
+
+aux = pain.reset_index()
+aux['week'] = aux.date.dt.week
+aux = aux.groupby(['week']).sum().reset_index()
+
+fig, ax = plt.subplots()
+bar = ax.bar(aux.week.values, aux.pain.values)
+gradientbars(bar)
+plt.title("Dolor Semanal Acumulado")
+plt.ylabel('Unidades de Dolor')
+plt.xlabel('Semana')
+plt.savefig('images/dolor_semanal.png')
+plt.show()
 
 
 # In[5]:
@@ -155,16 +203,4 @@ sns.heatmap(corr, mask=mask, cmap=cmap, vmax=.3, center=0,
 plt.savefig('images/corr.png')
 plt.show()
 plt.close()
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
 
