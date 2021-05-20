@@ -25,3 +25,8 @@ install_some_packages:
 run_script:
 	jupyter nbconvert --to script ExploratoryDataAnalysis.ipynb
 	python ExploratoryDataAnalysis.py
+
+gitall:
+	git add .
+	git commit -m $$m
+	git push
