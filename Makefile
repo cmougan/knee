@@ -21,6 +21,6 @@ run_script:
 
 gitall:
 	git add .
-	@read -p "Enter Module Name:" message; 	git commit -m "$$message"
+	@read -p "Enter commit message: " message; 	git commit -m "$$message"
 	git push
 
