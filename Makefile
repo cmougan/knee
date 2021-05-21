@@ -26,7 +26,6 @@ gitall:
 	git commit -m $(m)
 	git push
 
-
 am:
 	echo $(x)
 	echo ${x}
