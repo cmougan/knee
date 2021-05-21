@@ -1,5 +1,3 @@
-
-
 black:
 	python -m black .
 
@@ -25,9 +23,4 @@ gitall:
 	git add .
 	@read -p "Enter Module Name:" message; 	git commit -m "$$message"
 	git push
-
-
-am:
-	@read -p "Enter Module Name:" message; echo $$message
-	echo $(x)
 
