@@ -1,12 +1,7 @@
+
+
 black:
 	python -m black .
-
-gitall:
-	git add .
-	echo 'Enter the commit message:'
-	read commitMessage
-	git commit -m "$commitMessage"
-	git push
 
 export_requirements:
 	conda list --export > requirements.txt
@@ -28,5 +23,11 @@ run_script:
 
 gitall:
 	git add .
-	git commit -m $$m
+	git commit -m $(m)
 	git push
+
+
+am:
+	echo $(x)
+	echo ${x}
+
