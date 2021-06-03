@@ -60,13 +60,13 @@ sports = sports.set_index('date')
 
 # ## Images
 
-# In[11]:
+# In[ ]:
 
 
 
 
 
-# In[17]:
+# In[5]:
 
 
 plt.figure()
@@ -91,13 +91,13 @@ plt.close()
 pain.head()
 
 
-# In[20]:
+# In[ ]:
 
 
 
 
 
-# In[25]:
+# In[7]:
 
 
 aux = pain.reset_index()
@@ -116,7 +116,7 @@ plt.savefig('images/dolor_semanal.png')
 plt.show()
 
 
-# In[27]:
+# In[8]:
 
 
 plt.figure()
@@ -130,7 +130,7 @@ plt.show()
 plt.close()
 
 
-# In[31]:
+# In[9]:
 
 
 aux = sports.drop(columns="time").groupby(["date"]).agg("sum").reset_index()
@@ -149,7 +149,7 @@ plt.show()
 plt.close()
 
 
-# In[33]:
+# In[10]:
 
 
 aux = sports.drop(columns="time").groupby(["date"]).agg("sum").reset_index()
@@ -167,21 +167,21 @@ plt.show()
 plt.close()
 
 
-# In[9]:
+# In[11]:
 
 
 aux = sports.groupby(["date",'sport']).agg("sum").reset_index()
 aux = pd.merge(pain.reset_index(),aux,on='date')
 
 
-# In[10]:
+# In[12]:
 
 
 aux2 = pd.merge(aux[aux['sport'] =='Kite'],pain,on='date',how='right').fillna(0)
 aux3 = pd.merge(aux[aux['sport'] =='CF'],pain,on='date',how='right').fillna(0)
 
 
-# In[11]:
+# In[13]:
 
 
 fig, (ax1, ax2, ax3) = plt.subplots(3)
@@ -192,7 +192,7 @@ ax3.bar(aux3.date,aux3.time)
 plt.close()
 
 
-# In[12]:
+# In[14]:
 
 
 
@@ -217,4 +217,29 @@ sns.heatmap(corr, mask=mask, cmap=cmap, vmax=.3, center=0,
 plt.savefig('images/corr.png')
 plt.show()
 plt.close()
+
+
+# In[28]:
+
+
+post = pain[pain.index > '2021-05-06'].pain.values
+pre = pain[pain.index < '2021-05-06'].pain.values
+
+
+# In[39]:
+
+
+plt.figure()
+plt.xlabel('Pain')
+sns.kdeplot(post,label='post prp')
+sns.kdeplot(pre,label='pre prp')
+plt.legend()
+plt.savefig('images/pain_distribution.png')
+plt.show()
+
+
+# In[ ]:
+
+
+
 

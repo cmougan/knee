@@ -86,9 +86,10 @@ Pasadas las primeras 4 semanas el dolor vuelve de forma diferente y con mayor in
 
 
 
-## Correlacción de variables
+## Distribution Dolor Pre-Post PRP
+Gráfico de distribución del dolor antes y despues de la prp
 
-![Interacción entre variables](images/corr.png "Title")
+![Interacción entre variables](images/pain_distribution.png "Title")
 
 
 #### Bibliografía
