@@ -42,7 +42,7 @@ def gradientbars(bars):
 # In[3]:
 
 
-pain = pd.read_csv('data/pain.csv').drop(columns='Unnamed: 6')
+pain = pd.read_csv('data/pain.csv', skipinitialspace=True).drop(columns='Unnamed: 6')
 pain.columns = pain.columns.str.replace(' ', '')
 pain['date'] = pd.to_datetime(pain['date'] ,dayfirst=True)#.dt.strftime('%d/%m/%Y')
 pain = pain.set_index('date')
@@ -51,7 +51,7 @@ pain = pain.set_index('date')
 # In[4]:
 
 
-sports = pd.read_csv('data/sport.csv')
+sports = pd.read_csv('data/sport.csv', skipinitialspace=True)
 sports.columns = sports.columns.str.replace(' ', '')
 sports['date'] = pd.to_datetime(sports['date'],dayfirst=True)
 sports['sport'] = sports['sport'].str.strip()
@@ -219,11 +219,32 @@ plt.show()
 plt.close()
 
 
-# In[28]:
+# In[30]:
 
 
 post = pain[pain.index > '2021-05-06'].pain.values
 pre = pain[pain.index < '2021-05-06'].pain.values
+
+
+# In[37]:
+
+
+plt.figure()
+plt.xlabel('Pain')
+plt.ylabel('Frecuency of pain distribution')
+sns.kdeplot(post,label='post prp')
+sns.kdeplot(pre,label='pre prp')
+plt.legend()
+plt.title('Pain distribution before and after PRP')
+plt.savefig('images/pain_distribution.png')
+plt.show()
+
+
+# In[38]:
+
+
+colag = pain[pain['colageno']==True].pain.values
+no_colag = pain[pain['colageno']==False].pain.values
 
 
 # In[39]:
@@ -231,11 +252,19 @@ pre = pain[pain.index < '2021-05-06'].pain.values
 
 plt.figure()
 plt.xlabel('Pain')
-sns.kdeplot(post,label='post prp')
-sns.kdeplot(pre,label='pre prp')
+plt.ylabel('Frecuency of pain distribution')
+sns.kdeplot(colag,label='Tomando Colágeno')
+sns.kdeplot(no_colag,label='Sin Colágeno')
 plt.legend()
-plt.savefig('images/pain_distribution.png')
+plt.title('Pain distribution with and without colageno')
+plt.savefig('images/colageno_distribution.png')
 plt.show()
+
+
+# In[40]:
+
+
+pain.colageno.unique()
 
 
 # In[ ]:
