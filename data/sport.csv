@@ -92,7 +92,7 @@ date,sport, total_intensity, knee_intensity, time
 27-5-2021, CF, 3, 2, 60
 27-5-2021, Swim, 2, 1, 60
 28-5-2021, Swim, 2, 1, 60
-29-5-2021, Swim, 9, 3, 180
+29-5-2021, Swim, 9, 5, 180
 30-5-2021, Kite, 2, 3, 60
 31-5-2021, CF, 7, 8, 60
 1-6-2021, Swim, 1, 0, 30
@@ -107,3 +107,5 @@ date,sport, total_intensity, knee_intensity, time
 6-6-2021, Swim, 1, 0, 30
 6-6-2021, Kite, 3, 4, 90
 7-6-2021, CF, 4, 7, 60
+8-6-2021, Swim, 1, 0, 30
+8-6-2021, Swim, 2, 0, 30
