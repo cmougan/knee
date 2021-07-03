@@ -18,6 +18,9 @@ install_some_packages:
 run_script:
 	jupyter nbconvert --to script ExploratoryDataAnalysis.ipynb
 	python ExploratoryDataAnalysis.py
+	jupyter nbconvert --to script Models.ipynb
+	python Models.py
+
 
 gitall:
 	git add .

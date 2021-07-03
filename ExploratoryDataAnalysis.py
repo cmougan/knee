@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[50]:
+# In[1]:
 
 
 import numpy as np
@@ -23,7 +23,7 @@ rcParams['figure.figsize'] = 16,8
 warnings.filterwarnings('ignore')
 
 
-# In[51]:
+# In[2]:
 
 
 def gradientbars(bars):
@@ -39,7 +39,7 @@ def gradientbars(bars):
     ax.axis(lim)
 
 
-# In[66]:
+# In[3]:
 
 
 pain = pd.read_csv('data/pain.csv', skipinitialspace=True).drop(columns='Unnamed: 6')
@@ -49,7 +49,7 @@ pain = pain.set_index('date')
 pain['week'] = pain.index.week
 
 
-# In[67]:
+# In[4]:
 
 
 sports = pd.read_csv('data/sport.csv', skipinitialspace=True)
@@ -59,7 +59,7 @@ sports['sport'] = sports['sport'].str.strip()
 sports = sports.set_index('date')
 
 
-# In[68]:
+# In[5]:
 
 
 full = pd.merge(pain.reset_index(),sports.reset_index())
@@ -74,7 +74,7 @@ full['week'] = full.date.dt.week
 
 
 
-# In[69]:
+# In[6]:
 
 
 plt.figure()
@@ -91,7 +91,7 @@ plt.legend();
 
 
 
-# In[101]:
+# In[7]:
 
 
 aux = pain.reset_index()
@@ -109,7 +109,7 @@ plt.legend()
 plt.savefig('images/dolor_semanal.png')
 
 
-# In[113]:
+# In[8]:
 
 
 aux = aux.groupby(['week']).sum().reset_index()
@@ -126,7 +126,7 @@ plt.legend()
 plt.savefig('images/dolor_semanal_carga.png')
 
 
-# In[105]:
+# In[9]:
 
 
 plt.figure()
@@ -139,7 +139,7 @@ plt.savefig('images/dolor_cargas_diario.png')
 plt.close()
 
 
-# In[106]:
+# In[10]:
 
 
 aux = sports.drop(columns="time").groupby(["date"]).agg("sum").reset_index()
@@ -157,7 +157,7 @@ plt.legend()
 plt.close()
 
 
-# In[107]:
+# In[11]:
 
 
 aux = sports.drop(columns="time").groupby(["date"]).agg("sum").reset_index()
@@ -174,21 +174,21 @@ plt.savefig('images/dolor_int_rodilla.png')
 plt.close()
 
 
-# In[108]:
+# In[12]:
 
 
 aux = sports.groupby(["date",'sport']).agg("sum").reset_index()
 aux = pd.merge(pain.reset_index(),aux,on='date')
 
 
-# In[109]:
+# In[13]:
 
 
 aux2 = pd.merge(aux[aux['sport'] =='Kite'],pain,on='date',how='right').fillna(0)
 aux3 = pd.merge(aux[aux['sport'] =='CF'],pain,on='date',how='right').fillna(0)
 
 
-# In[110]:
+# In[14]:
 
 
 fig, (ax1, ax2, ax3) = plt.subplots(3)
@@ -199,7 +199,7 @@ ax3.bar(aux3.date,aux3.time)
 plt.close()
 
 
-# In[111]:
+# In[15]:
 
 
 
@@ -225,14 +225,14 @@ plt.savefig('images/corr.png')
 plt.close()
 
 
-# In[112]:
+# In[16]:
 
 
 post = pain[pain.index > '2021-05-06'].pain.values
 pre = pain[pain.index < '2021-05-06'].pain.values
 
 
-# In[37]:
+# In[17]:
 
 
 plt.figure()
@@ -245,14 +245,14 @@ plt.title('Pain distribution before and after PRP')
 plt.savefig('images/pain_distribution.png')
 
 
-# In[38]:
+# In[18]:
 
 
 colag = pain[pain['colageno']==True].pain.values
 no_colag = pain[pain['colageno']==False].pain.values
 
 
-# In[39]:
+# In[19]:
 
 
 plt.figure()
@@ -263,4 +263,16 @@ sns.kdeplot(no_colag,label='Sin Colágeno')
 plt.legend()
 plt.title('Pain distribution with and without colageno')
 plt.savefig('images/colageno_distribution.png')
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
 
