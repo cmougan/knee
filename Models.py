@@ -297,7 +297,6 @@ print('Test ',mean_absolute_error(dt.predict(X_te),y_te))
 plt.figure()
 plot_tree(dt, feature_names=X_te.columns, filled=True);
 plt.savefig('images/dt.svg',format='svg')
-plt.show()
 
 
 # ### Random Forest
@@ -434,7 +433,6 @@ print('Test ',mean_absolute_error(dt.predict(X_te),y_te))
 plt.figure()
 plot_tree(dt, feature_names=X_te.columns, filled=True);
 plt.savefig('images/dt_shift.svg',format='svg')
-plt.show()
 
 
 # ### Random Forest
