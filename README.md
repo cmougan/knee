@@ -8,6 +8,7 @@
 
 ### Resonacias Magnéticas
 #### 10/11/2020
+
 __Hallazgos__
 
 No se identifica patrón de edema óseo.\
@@ -27,9 +28,35 @@ No existe derrame articular en cantidad valorable.\
 Condomalacia rotuliana grado II-III. Engrosamiento del tendón cuadricipital.\
 No existen alteraciones significativas del tendón rotuliano. \
 Lesión condral de inicio en la meseta tibial externa.\
+[Link al estudio](https://portaldelpaciente.htmedica.com/PortalPaciente/OpenSharedStudyRequest/dfbd3888-b691-41c4-a605-e3a2757bfac8)
+
+### 27/07/2021
+
+__HALLAZGOS__
+
+Menisco medial con signos de degeneración mixoide del cuerno posterior. Menisco lateral
+de morfología e intensidad de señal dentro de la normalidad.
+Compartimento femorotibial medial con interlínea articular conservada, no observando
+edema óseo ni líneas de fractura.
+Mínima fibrilación del cartílago de la zona de carga del platillo tibial lateral.
+Articulación femoropatelar congruente con patela de inserción normal. Fibrilación con
+algunas fisuras de espesor completo del cartílago del tercio medio de la cresta y carilla
+patelar medial, sin afectación del hueso subcondral. Tróclea de morfología dentro de la
+normalidad con leve elongación de los valores de T2 del cartílago de la vertiente lateral.
+Retináculos íntegros.
+Tendón del cuádriceps y patelar sin hallazgos reseñables.
+Ligamentos cruzados y colaterales de grosor y disposición dentro de la normalidad.
+No se observa derrame articular en cuantía significativa. Pequeño quiste de Baker no
+complicado.
+
+**CONCLUSION**
+Condropatía patelar difusa grado II-III. Condropatía troclear grado I.
+
+[Link al estudio](https://portaldelpaciente.htmedica.com/PortalPaciente/OpenSharedStudyRequest/dfbd3888-b691-41c4-a605-e3a2757bfac8)
+
 
 ### Podología (Análisis de la pisada)
- Por Rafael Gonzales Clinici San Sebastian de los Reyes
+ Por Rafael Gonzales Clinica San Sebastian de los Reyes
  ![Análisi de la pisada](images/podologo/heatmap_pisada.jpeg "Title")
  
  Se observa que el mayor punto de apoyo es en el talón del pié izquierdo. 
@@ -42,11 +69,22 @@ __Tratamiento:__ Añadir una leve correción en la plantilla del pie derecho[21/
 ### Tratamiento
 
 #### Infiltracion PRP
-28/01/2021
+**28/01/2021**
 
 Efecto: Ausencia de dolor durante las 4 semanas siguientes. 
 Aumento de la carga de entrenamiento a niveles anteriores: CF y Kite. 
 Pasadas las primeras 4 semanas el dolor vuelve de forma diferente y con mayor intensidad.
+De forma más estructural e interna en la rodilla
+
+**6/5/2021**
+
+Efecto: Disminución del dolor en las 3-4 semanas posteriores a la infiltración.
+A la 4 semana dejé de tomar CarticurePlus y hubo un pico de dolor durante el periodo que no consumí carticure (1s)
+
+**6/7/2021**
+Efecto: Disminucion del dolor en las 4 semanas posteriores.
+
+
 
 ## Metodología de evaluación
 
