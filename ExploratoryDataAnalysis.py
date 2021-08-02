@@ -74,7 +74,7 @@ full['week'] = full.date.dt.week
 
 
 
-# In[6]:
+# In[8]:
 
 
 plt.figure()
@@ -91,7 +91,7 @@ plt.legend();
 
 
 
-# In[7]:
+# In[10]:
 
 
 aux = pain.reset_index()
@@ -104,12 +104,13 @@ gradientbars(bar)
 plt.title("Dolor Semanal Acumulado")
 plt.ylabel('Unidades de Dolor')
 plt.bar(x=pd.to_datetime(['2021-05-06']).week,height=22,width=0.1,color='k',label='PRP')
+plt.bar(x=pd.to_datetime(['2021-07-06']).week,height=22,width=0.1,color='k',label='PRP')
 plt.xlabel('Semana')
 plt.legend()
 plt.savefig('images/dolor_semanal.png')
 
 
-# In[8]:
+# In[11]:
 
 
 aux = aux.groupby(['week']).sum().reset_index()
@@ -120,13 +121,14 @@ gradientbars(bar)
 plt.title("Dolor Semanal Acumulado y carga de entrenamiento en rodilla")
 plt.ylabel('Unidades de Dolor')
 plt.bar(x=pd.to_datetime(['2021-05-06']).week,height=22,width=0.1,color='k',label='PRP')
+plt.bar(x=pd.to_datetime(['2021-07-06']).week,height=22,width=0.1,color='k',label='PRP')
 plt.plot(full.groupby('week').knee_intensity.sum()/3,label='Carga de entrenamiento acumulada')
 plt.xlabel('Semana')
 plt.legend()
 plt.savefig('images/dolor_semanal_carga.png')
 
 
-# In[9]:
+# In[12]:
 
 
 plt.figure()
@@ -139,7 +141,7 @@ plt.savefig('images/dolor_cargas_diario.png')
 plt.close()
 
 
-# In[10]:
+# In[13]:
 
 
 aux = sports.drop(columns="time").groupby(["date"]).agg("sum").reset_index()
@@ -157,7 +159,7 @@ plt.legend()
 plt.close()
 
 
-# In[11]:
+# In[14]:
 
 
 aux = sports.drop(columns="time").groupby(["date"]).agg("sum").reset_index()
@@ -174,21 +176,21 @@ plt.savefig('images/dolor_int_rodilla.png')
 plt.close()
 
 
-# In[12]:
+# In[15]:
 
 
 aux = sports.groupby(["date",'sport']).agg("sum").reset_index()
 aux = pd.merge(pain.reset_index(),aux,on='date')
 
 
-# In[13]:
+# In[16]:
 
 
 aux2 = pd.merge(aux[aux['sport'] =='Kite'],pain,on='date',how='right').fillna(0)
 aux3 = pd.merge(aux[aux['sport'] =='CF'],pain,on='date',how='right').fillna(0)
 
 
-# In[14]:
+# In[17]:
 
 
 fig, (ax1, ax2, ax3) = plt.subplots(3)
@@ -199,7 +201,7 @@ ax3.bar(aux3.date,aux3.time)
 plt.close()
 
 
-# In[15]:
+# In[18]:
 
 
 
@@ -225,14 +227,14 @@ plt.savefig('images/corr.png')
 plt.close()
 
 
-# In[16]:
+# In[19]:
 
 
 post = pain[pain.index > '2021-05-06'].pain.values
 pre = pain[pain.index < '2021-05-06'].pain.values
 
 
-# In[17]:
+# In[20]:
 
 
 plt.figure()
@@ -245,14 +247,14 @@ plt.title('Pain distribution before and after PRP')
 plt.savefig('images/pain_distribution.png')
 
 
-# In[18]:
+# In[21]:
 
 
 colag = pain[pain['colageno']==True].pain.values
 no_colag = pain[pain['colageno']==False].pain.values
 
 
-# In[19]:
+# In[22]:
 
 
 plt.figure()
