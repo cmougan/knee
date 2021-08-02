@@ -80,6 +80,8 @@ De forma más estructural e interna en la rodilla
 
 Efecto: Disminución del dolor en las 3-4 semanas posteriores a la infiltración.
 A la 4 semana dejé de tomar CarticurePlus y hubo un pico de dolor durante el periodo que no consumí carticure (1s)
+Al final del informe se aporta visualización y test estadístico sobre los efectos -- No concluyente.
+
 
 **6/7/2021**
 Efecto: Disminucion del dolor en las 4 semanas posteriores.
