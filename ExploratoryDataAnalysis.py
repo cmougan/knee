@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[2]:
 
 
 import numpy as np
@@ -23,7 +23,7 @@ rcParams['figure.figsize'] = 16,8
 warnings.filterwarnings('ignore')
 
 
-# In[2]:
+# In[3]:
 
 
 def gradientbars(bars):
@@ -39,7 +39,7 @@ def gradientbars(bars):
     ax.axis(lim)
 
 
-# In[3]:
+# In[4]:
 
 
 pain = pd.read_csv('data/pain.csv', skipinitialspace=True).drop(columns='Unnamed: 6')
@@ -49,7 +49,7 @@ pain = pain.set_index('date')
 pain['week'] = pain.index.week
 
 
-# In[4]:
+# In[5]:
 
 
 sports = pd.read_csv('data/sport.csv', skipinitialspace=True)
@@ -59,7 +59,7 @@ sports['sport'] = sports['sport'].str.strip()
 sports = sports.set_index('date')
 
 
-# In[5]:
+# In[6]:
 
 
 full = pd.merge(pain.reset_index(),sports.reset_index())
@@ -74,15 +74,23 @@ full['week'] = full.date.dt.week
 
 
 
-# In[8]:
+# In[18]:
+
+
+pain.index.to_pydatetime()
+
+
+# In[26]:
 
 
 plt.figure()
 plt.title('Evolución diaria del dolor')
-sns.lineplot(y = pain.pain, x =pain.index,label='Evolución del Dolor' )
-plt.savefig('images/dolor_diario.png')
-plt.bar(x=pd.to_datetime(['2021-05-06']),height=7,width=0.2,color='k',label='PRP')
+
+plt.plot(pain.index.to_pydatetime(),pain.pain,label='Evolución del Dolor')
+plt.bar(x=pd.to_datetime(['2021-05-06']).to_pydatetime(),height=8,width=0.5,color='k',label='PRP')
+plt.bar(x=pd.to_datetime(['2021-07-06']).to_pydatetime(),height=8,width=0.5,color='k',label='PRP')
 plt.legend();
+plt.savefig('images/dolor_diario.png')
 
 
 # In[ ]:
