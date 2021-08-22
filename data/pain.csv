@@ -142,8 +142,9 @@ date,pain, leg_fatigue, total_fatigue, nsaids, colageno,
 14-8-2021, 0.5,2, 2, False, False
 15-8-2021, 1,2, 2, False, False
 16-8-2021, 2,1, 1, False, False
-17-8-2021, 0,2, 0, False, False
-18-8-2021, 0,2, 0, False, False
-19-8-2021, 0,2, 0, False, False
-20-8-2021, 0,2, 0, False, False
-21-8-2021, 0,2, 0, False, False
+17-8-2021, 0,0, 2, False, False
+18-8-2021, 0,0, 2, False, False
+19-8-2021, 0,0, 2, False, False
+20-8-2021, 0,0, 2, False, False
+21-8-2021, 0,0, 2, False, False
+22-8-2021, 0,0, 2, False, False
