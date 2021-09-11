@@ -118,15 +118,25 @@ Efecto: Disminucion del dolor en las 4 semanas posteriores.
 ![Evolución Dolor](images/dolor_semanal_carga.png "Title")
 
 
+## Modelización
+En esta sección se usa un modelo estadístico para modelizar el problema.
+A continuación se utilizan técnicas de explicación para encontrar patrones.
+
+En la imagen inferior se puede ver la contribución total de cada variable
+a las predicciónes del modelo
+![Global Shap](images/global_shap.png "Title")
+
+En la imagen inferior se pueden observar la cada contribucióon por dia y variable
+de cada instancia.
+![Evolución Dolor](images/summary_shap.png "Title")
+
 <!-- 
 ## Carga deportiva
 [Deporte Acumulado](images/deporte.png "Title") 
 
 ![Deporte Acumulado](images/dolor_int_rodilla.png "Title")
 
-![Relacion Cargas y Dolor](images/dolor_cargas_diario.png "Title")--->
-
-
+![Relacion Cargas y Dolor](images/dolor_cargas_diario.png "Title")
 
 ## Distribution Dolor Pre-Post PRP
 Gráfico de distribución del dolor antes y despues de la prp
@@ -134,7 +144,7 @@ Gráfico de distribución del dolor antes y despues de la prp
 ![Interacción entre variables](images/pain_distribution.png "Title")
 ![Interacción entre variables](images/colageno_distribution.png "Title")
 
-
+--->
 #### Bibliografía
 
 [1] Platelet-rich plasma therapy:https://www.health.harvard.edu/newsletter_article/platelet-rich-plasma-therapy
