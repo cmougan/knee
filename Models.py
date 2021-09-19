@@ -313,6 +313,7 @@ print("Test ", mean_absolute_error(dt.predict(X_te), y_te))
 plt.figure()
 plot_tree(dt, feature_names=X_te.columns, filled=True)
 plt.savefig("images/dt.svg", format="svg")
+plt.close()
 
 
 # ### Random Forest
@@ -451,6 +452,7 @@ print("Test ", mean_absolute_error(dt.predict(X_te), y_te))
 plt.figure()
 plot_tree(dt, feature_names=X_te.columns, filled=True)
 plt.savefig("images/dt_shift.svg", format="svg")
+plt.close()
 
 
 # ### Random Forest
@@ -504,6 +506,7 @@ shap_values = explainer(X)
 
 shap.summary_plot(shap_values, X, show=False)
 plt.savefig("images/summary_shap.png")
+plt.close()
 
 
 # In[71]:
@@ -511,6 +514,7 @@ plt.savefig("images/summary_shap.png")
 
 shap.plots.bar(shap_values, show=False)
 plt.savefig("images/global_shap.png")
+plt.close()
 
 
 # In[ ]:

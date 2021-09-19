@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2021-09-19T15:54:39.474599</dc:date>
+    <dc:date>2021-09-19T15:57:19.349907</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -1522,35 +1522,33 @@ Q 876.727273 -26.36 876.727273 -26.36
    </g>
    <g id="text_11">
     <g id="patch_23">
-     <path d="M 829.851206 -2.088108 
-L 923.603339 -2.088108 
-L 923.603339 -50.751026 
-L 829.851206 -50.751026 
+     <path d="M 832.675477 -2.088108 
+L 920.779068 -2.088108 
+L 920.779068 -50.751026 
+L 832.675477 -50.751026 
 z
 " style="fill:#ffffff;stroke:#ffffff;stroke-linejoin:miter;"/>
     </g>
-    <!-- total_fatigue &lt;= 7.5 -->
-    <g style="fill:#262626;" transform="translate(833.206021 -39.876471)scale(0.101661 -0.101661)">
-     <use xlink:href="#ArialMT-74"/>
-     <use x="27.783203" xlink:href="#ArialMT-6f"/>
-     <use x="83.398438" xlink:href="#ArialMT-74"/>
-     <use x="111.181641" xlink:href="#ArialMT-61"/>
-     <use x="166.796875" xlink:href="#ArialMT-6c"/>
-     <use x="189.013672" xlink:href="#ArialMT-5f"/>
-     <use x="244.628906" xlink:href="#ArialMT-66"/>
-     <use x="272.412109" xlink:href="#ArialMT-61"/>
-     <use x="328.027344" xlink:href="#ArialMT-74"/>
-     <use x="355.810547" xlink:href="#ArialMT-69"/>
-     <use x="378.027344" xlink:href="#ArialMT-67"/>
-     <use x="433.642578" xlink:href="#ArialMT-75"/>
-     <use x="489.257812" xlink:href="#ArialMT-65"/>
-     <use x="544.873047" xlink:href="#ArialMT-20"/>
-     <use x="572.65625" xlink:href="#ArialMT-3c"/>
-     <use x="631.054688" xlink:href="#ArialMT-3d"/>
-     <use x="689.453125" xlink:href="#ArialMT-20"/>
-     <use x="717.236328" xlink:href="#ArialMT-37"/>
-     <use x="772.851562" xlink:href="#ArialMT-2e"/>
-     <use x="800.634766" xlink:href="#ArialMT-35"/>
+    <!-- leg_fatigue &lt;= 7.5 -->
+    <g style="fill:#262626;" transform="translate(836.030292 -39.876471)scale(0.101661 -0.101661)">
+     <use xlink:href="#ArialMT-6c"/>
+     <use x="22.216797" xlink:href="#ArialMT-65"/>
+     <use x="77.832031" xlink:href="#ArialMT-67"/>
+     <use x="133.447266" xlink:href="#ArialMT-5f"/>
+     <use x="189.0625" xlink:href="#ArialMT-66"/>
+     <use x="216.845703" xlink:href="#ArialMT-61"/>
+     <use x="272.460938" xlink:href="#ArialMT-74"/>
+     <use x="300.244141" xlink:href="#ArialMT-69"/>
+     <use x="322.460938" xlink:href="#ArialMT-67"/>
+     <use x="378.076172" xlink:href="#ArialMT-75"/>
+     <use x="433.691406" xlink:href="#ArialMT-65"/>
+     <use x="489.306641" xlink:href="#ArialMT-20"/>
+     <use x="517.089844" xlink:href="#ArialMT-3c"/>
+     <use x="575.488281" xlink:href="#ArialMT-3d"/>
+     <use x="633.886719" xlink:href="#ArialMT-20"/>
+     <use x="661.669922" xlink:href="#ArialMT-37"/>
+     <use x="717.285156" xlink:href="#ArialMT-2e"/>
+     <use x="745.068359" xlink:href="#ArialMT-35"/>
     </g>
     <!-- mae = 0.856 -->
     <g style="fill:#262626;" transform="translate(848.328101 -29.004776)scale(0.101661 -0.101661)">
