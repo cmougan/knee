@@ -130,6 +130,11 @@ En la imagen inferior se pueden observar la cada contribucióon por dia y variab
 de cada instancia.
 ![Evolución Dolor](images/summary_shap.png "Title")
 
+En la siguiente imagen se muestra un arbol de decisión. 
+Las primeras divisiones son suelen tener mayor importancia.
+![Evolución Dolor](images/dt_shift.svg "Title")
+
+
 <!-- 
 ## Carga deportiva
 [Deporte Acumulado](images/deporte.png "Title") 

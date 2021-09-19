@@ -5,7 +5,7 @@
 #%%javascript
 #utils.load_extension("execute_time/ExecuteTime")
 #utils.load_extension("collapsible_headings/main")
-# In[2]:
+# In[1]:
 
 
 import numpy as np
@@ -27,7 +27,7 @@ rcParams["figure.figsize"] = 16, 8
 warnings.filterwarnings("ignore")
 
 
-# In[3]:
+# In[2]:
 
 
 pain = pd.read_csv("data/pain.csv").drop(columns="Unnamed: 6")
@@ -36,7 +36,7 @@ pain["date"] = pd.to_datetime(pain["date"], dayfirst=True)  # .dt.strftime('%d/%
 pain = pain.set_index("date")
 
 
-# In[4]:
+# In[3]:
 
 
 sports = pd.read_csv("data/sport.csv")
@@ -46,7 +46,7 @@ sports["sport"] = sports["sport"].str.strip()
 sports = sports.set_index("date")
 
 
-# In[5]:
+# In[4]:
 
 
 pain.shape
@@ -62,32 +62,32 @@ pain.shape
 
 # ## Crossfit
 
-# In[6]:
+# In[5]:
 
 
 cf = sports.reset_index().groupby(["date", "sport"]).sum().reset_index()
 cf = cf[cf.sport == "CF"]
 
 
-# In[7]:
+# In[6]:
 
 
 cf.columns = ["date", "sport", "total_intensity_CF", "knee_intensity_CF", "time"]
 
 
-# In[8]:
+# In[7]:
 
 
 df = pain.join(cf.set_index("date").knee_intensity_CF)
 
 
-# In[9]:
+# In[8]:
 
 
 df.fillna(0, inplace=True)
 
 
-# In[10]:
+# In[9]:
 
 
 df["knee_intensity_CF_lag_1"] = df.knee_intensity_CF.shift(1)
@@ -95,7 +95,7 @@ df["knee_intensity_CF_lag_2"] = df.knee_intensity_CF.shift(2)
 df["knee_intensity_CF_lag_3"] = df.knee_intensity_CF.shift(3)
 
 
-# In[11]:
+# In[10]:
 
 
 df.fillna(0, inplace=True)
@@ -103,32 +103,32 @@ df.fillna(0, inplace=True)
 
 # ## Kite
 
-# In[12]:
+# In[11]:
 
 
 kite = sports.reset_index().groupby(["date", "sport"]).sum().reset_index()
 kite = kite[kite.sport == "Kite"]
 
 
-# In[13]:
+# In[12]:
 
 
 kite.columns = ["date", "sport", "total_intensity_kite", "knee_intensity_kite", "time"]
 
 
-# In[14]:
+# In[13]:
 
 
 df = df.join(kite.set_index("date").knee_intensity_kite)
 
 
-# In[15]:
+# In[14]:
 
 
 df.fillna(0, inplace=True)
 
 
-# In[16]:
+# In[15]:
 
 
 df["knee_intensity_kite_lag_1"] = df.knee_intensity_kite.shift(1)
@@ -136,13 +136,13 @@ df["knee_intensity_kite_lag_2"] = df.knee_intensity_kite.shift(2)
 df["knee_intensity_kite_lag_3"] = df.knee_intensity_kite.shift(3)
 
 
-# In[17]:
+# In[16]:
 
 
 df.fillna(0, inplace=True)
 
 
-# In[18]:
+# In[17]:
 
 
 df
@@ -150,32 +150,32 @@ df
 
 # ## Others
 
-# In[19]:
+# In[18]:
 
 
 aux = sports.reset_index().groupby(["date", "sport"]).sum().reset_index()
 aux = aux[(aux.sport != "CF") & (aux.sport != "Kite")]
 
 
-# In[20]:
+# In[19]:
 
 
 aux.columns = ["date", "sport", "total_intensity_other", "knee_intensity_other", "time"]
 
 
-# In[21]:
+# In[20]:
 
 
 df = df.join(aux.set_index("date").knee_intensity_other)
 
 
-# In[22]:
+# In[21]:
 
 
 df.fillna(0, inplace=True)
 
 
-# In[23]:
+# In[22]:
 
 
 df["knee_intensity_other_lag_1"] = df.knee_intensity_other.shift(1)
@@ -183,7 +183,7 @@ df["knee_intensity_other_lag_2"] = df.knee_intensity_other.shift(2)
 df["knee_intensity_other_lag_3"] = df.knee_intensity_other.shift(3)
 
 
-# In[24]:
+# In[23]:
 
 
 df.fillna(0, inplace=True)
@@ -193,7 +193,7 @@ df.fillna(0, inplace=True)
 
 # ## Predict the same day
 
-# In[25]:
+# In[24]:
 
 
 from sklearn.model_selection import train_test_split
@@ -206,25 +206,25 @@ from sklearn.ensemble import RandomForestRegressor
 from xgboost import XGBRFRegressor
 
 
-# In[26]:
+# In[25]:
 
 
 df = df.reset_index(drop=True)
 
 
-# In[27]:
+# In[26]:
 
 
 df.nsaids = df.nsaids.astype(bool)
 
 
-# In[28]:
+# In[27]:
 
 
 df.colageno = df.colageno.astype(bool)
 
 
-# In[29]:
+# In[28]:
 
 
 X_tr, X_te, y_tr, y_te = train_test_split(
@@ -234,13 +234,13 @@ X_tr, X_te, y_tr, y_te = train_test_split(
 
 # ### Dummy
 
-# In[30]:
+# In[29]:
 
 
 mean_absolute_error(np.zeros_like(y_tr) + np.mean(y_tr).values, y_tr)
 
 
-# In[31]:
+# In[30]:
 
 
 mean_absolute_error(np.zeros_like(y_te) + np.mean(y_te).values, y_te)
@@ -248,31 +248,31 @@ mean_absolute_error(np.zeros_like(y_te) + np.mean(y_te).values, y_te)
 
 # ### Lasso
 
-# In[32]:
+# In[31]:
 
 
 clf = Lasso(alpha=0.1)
 
 
-# In[33]:
+# In[32]:
 
 
 clf.fit(X_tr, y_tr)
 
 
-# In[34]:
+# In[33]:
 
 
 mean_absolute_error(clf.predict(X_tr), y_tr)
 
 
-# In[35]:
+# In[34]:
 
 
 mean_absolute_error(clf.predict(X_te), y_te)
 
 
-# In[36]:
+# In[35]:
 
 
 print("Model coefficients:\n")
@@ -282,32 +282,32 @@ for i in range(X_tr.shape[1]):
 
 # ### Decision tree
 
-# In[37]:
+# In[36]:
 
 
 dt = DecisionTreeRegressor(max_depth=3, criterion="mae")
 dt.fit(X_tr, y_tr)
 
 
-# In[38]:
+# In[37]:
 
 
 print("Decision Tree Results")
 
 
-# In[39]:
+# In[38]:
 
 
 print("Train ", mean_absolute_error(dt.predict(X_tr), y_tr))
 
 
-# In[40]:
+# In[39]:
 
 
 print("Test ", mean_absolute_error(dt.predict(X_te), y_te))
 
 
-# In[41]:
+# In[40]:
 
 
 plt.figure()
@@ -317,26 +317,26 @@ plt.savefig("images/dt.svg", format="svg")
 
 # ### Random Forest
 
-# In[42]:
+# In[41]:
 
 
 rf = RandomForestRegressor(min_samples_leaf=3)
 rf.fit(X_tr, y_tr)
 
 
-# In[43]:
+# In[42]:
 
 
 print("RF results")
 
 
-# In[44]:
+# In[43]:
 
 
 print("Train", mean_absolute_error(rf.predict(X_tr), y_tr))
 
 
-# In[45]:
+# In[44]:
 
 
 print("Test", mean_absolute_error(rf.predict(X_te), y_te))
@@ -344,7 +344,7 @@ print("Test", mean_absolute_error(rf.predict(X_te), y_te))
 
 # ### Xgboost
 
-# In[46]:
+# In[45]:
 
 
 xgb = XGBRFRegressor().fit(X_tr, y_tr)
@@ -352,7 +352,7 @@ print("XGB Results")
 print("Train ", mean_absolute_error(xgb.predict(X_tr), y_tr))
 
 
-# In[47]:
+# In[46]:
 
 
 print("Test ", mean_absolute_error(xgb.predict(X_te), y_te))
@@ -360,25 +360,25 @@ print("Test ", mean_absolute_error(xgb.predict(X_te), y_te))
 
 # ## Predict Next Day
 
-# In[48]:
+# In[47]:
 
 
 df["pain_shift"] = df.pain - df.pain.shift()
-df = df.dropna().drop(columns="pain")
+df_lag = df.dropna().drop(columns="pain")
 X_tr, X_te, y_tr, y_te = train_test_split(
-    df.drop(columns="pain_shift"), df[["pain_shift"]], test_size=0.2, random_state=42
+    df_lag.drop(columns="pain_shift"), df_lag[["pain_shift"]], test_size=0.2, random_state=42
 )
 
 
 # ### Dummy
 
-# In[49]:
+# In[48]:
 
 
 mean_absolute_error(np.zeros_like(y_tr) + np.mean(y_tr).values, y_tr)
 
 
-# In[50]:
+# In[49]:
 
 
 mean_absolute_error(np.zeros_like(y_te) + np.mean(y_te).values, y_te)
@@ -386,31 +386,31 @@ mean_absolute_error(np.zeros_like(y_te) + np.mean(y_te).values, y_te)
 
 # ### Lasso
 
-# In[51]:
+# In[50]:
 
 
 clf = Lasso(alpha=0.1)
 
 
-# In[52]:
+# In[51]:
 
 
 clf.fit(X_tr, y_tr)
 
 
-# In[53]:
+# In[52]:
 
 
 mean_absolute_error(clf.predict(X_tr), y_tr)
 
 
-# In[54]:
+# In[53]:
 
 
 mean_absolute_error(clf.predict(X_te), y_te)
 
 
-# In[55]:
+# In[54]:
 
 
 print("Model coefficients:\n")
@@ -420,32 +420,32 @@ for i in range(X_tr.shape[1]):
 
 # ### Decision tree
 
-# In[56]:
+# In[55]:
 
 
 dt = DecisionTreeRegressor(max_depth=3, min_samples_leaf=2, criterion="mae")
 dt.fit(X_tr, y_tr)
 
 
-# In[57]:
+# In[56]:
 
 
 print("Decision Tree Results")
 
 
-# In[58]:
+# In[57]:
 
 
 print("Train ", mean_absolute_error(dt.predict(X_tr), y_tr))
 
 
-# In[59]:
+# In[58]:
 
 
 print("Test ", mean_absolute_error(dt.predict(X_te), y_te))
 
 
-# In[60]:
+# In[59]:
 
 
 plt.figure()
@@ -455,26 +455,26 @@ plt.savefig("images/dt_shift.svg", format="svg")
 
 # ### Random Forest
 
-# In[61]:
+# In[60]:
 
 
 rf = RandomForestRegressor(min_samples_leaf=3)
 rf.fit(X_tr, y_tr)
 
 
-# In[62]:
+# In[61]:
 
 
 print("RF results")
 
 
-# In[63]:
+# In[62]:
 
 
 print("Train", mean_absolute_error(rf.predict(X_tr), y_tr))
 
 
-# In[64]:
+# In[63]:
 
 
 print("Test", mean_absolute_error(rf.predict(X_te), y_te))
@@ -482,38 +482,31 @@ print("Test", mean_absolute_error(rf.predict(X_te), y_te))
 
 # ### Xgboost
 
-# In[65]:
-
-
-xgb = XGBRFRegressor().fit(X_tr, y_tr)
-print("XGB Results")
-print("Train ", mean_absolute_error(xgb.predict(X_tr), y_tr))
-
-
-# In[66]:
-
-
-print("Test ", mean_absolute_error(xgb.predict(X_te), y_te))
-
-
-# In[67]:
-
-
-explainer = shap.Explainer(xgb)
-shap_values = explainer(X_tr)
-
-# visualize the first prediction's explanation
-shap.plots.waterfall(shap_values[0])
-
-
 # In[68]:
 
 
-shap.summary_plot(shap_values, X_tr, show=False)
-plt.savefig("images/summary_shap.png")
+X = df.drop(columns=["pain", "pain_shift"])
+y = df[["pain"]]
+xgb = XGBRFRegressor().fit(X, y)
+print("XGB Results")
+print("Train ", mean_absolute_error(xgb.predict(X), y))
 
 
 # In[69]:
+
+
+explainer = shap.Explainer(xgb)
+shap_values = explainer(X)
+
+
+# In[70]:
+
+
+shap.summary_plot(shap_values, X, show=False)
+plt.savefig("images/summary_shap.png")
+
+
+# In[71]:
 
 
 shap.plots.bar(shap_values, show=False)
