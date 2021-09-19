@@ -124,15 +124,15 @@ A continuación se utilizan técnicas de explicación para encontrar patrones.
 
 En la imagen inferior se puede ver la contribución total de cada variable
 a las predicciónes del modelo
-![Global Shap](images/global_shap.png "Title")
+![Global Shap](images/global_shap.png "Global feat")
 
 En la imagen inferior se pueden observar la cada contribucióon por dia y variable
 de cada instancia.
-![Evolución Dolor](images/summary_shap.png "Title")
+![Evolución Dolor](images/summary_shap.png "Summary shap")
 
 En la siguiente imagen se muestra un arbol de decisión. 
 Las primeras divisiones son suelen tener mayor importancia.
-![Evolución Dolor](images/dt_shift.svg "Title")
+![Decision Tree ](images/dt_shift.svg "DT")
 
 
 <!-- 
