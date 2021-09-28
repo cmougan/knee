@@ -20,10 +20,10 @@ run_script:
 	python ExploratoryDataAnalysis.py
 	jupyter nbconvert --to script Models.ipynb
 	python Models.py
-
-
 gitall:
 	git add .
 	@read -p "Enter commit message: " message; 	git commit -m "$$message"
 	git push
+
+
 
