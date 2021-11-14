@@ -149,6 +149,9 @@ Gráfico de distribución del dolor antes y despues de la prp
 ![Interacción entre variables](images/pain_distribution.png "Title")
 ![Interacción entre variables](images/colageno_distribution.png "Title")
 
+## Efecto diario del colágeno
+![Colageno](images/colageno_distribution.png "Title")
+
 --->
 #### Bibliografía
 
