@@ -262,7 +262,7 @@ colag = pain[pain['colageno']==True].pain.values
 no_colag = pain[pain['colageno']==False].pain.values
 
 
-# In[20]:
+# In[21]:
 
 
 plt.figure()
