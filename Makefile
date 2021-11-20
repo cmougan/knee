@@ -25,5 +25,9 @@ gitall:
 	@read -p "Enter commit message: " message; 	git commit -m "$$message"
 	git push
 
+sum_hours:
+	awk -F"," '{print;x+=$2}END{print "Total " x}' data/ecs.csv
+
+
 
 
