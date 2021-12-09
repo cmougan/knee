@@ -28,6 +28,9 @@ gitall:
 sum_hours:
 	awk -F"," '{print;x+=$2}END{print "Total " x}' data/ecs.csv
 
+sum_sport_hours:
+	awk -F',' '{sum+=$5;}END{print sum;}' data/sport.csv
+
 
 
 
