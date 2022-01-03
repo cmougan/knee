@@ -7,7 +7,8 @@ from matplotlib import rcParams
 import seaborn as sns
 
 import os
-os.chdir('/Users/cmougan/Desktop/knee')
+
+os.chdir("/Users/cmougan/Desktop/knee")
 
 plt.style.use("seaborn-whitegrid")
 sns.set(style="whitegrid", color_codes=True)
@@ -73,6 +74,21 @@ sports["week"] = sports.date.dt.week
 aux = sports.groupby(["sport"])["time"].sum()
 aux = aux.sort_values()
 aux = aux / 60
+aux.index = [
+    "None",
+    "Bike",
+    "Bici",
+    "Skate",
+    "Climb",
+    "Fisio",
+    "Run",
+    "Walk",
+    "Yoga",
+    "Swim",
+    "Kite",
+    "CrossFit",
+    "Surf",
+]
 # %%
 def func(pct, allvals):
     absolute = int(np.round(pct / 100.0 * np.sum(allvals)))
@@ -80,16 +96,31 @@ def func(pct, allvals):
 
 
 # %%
+
 colors = sns.color_palette("pastel")[0 : aux.shape[0]]
 
 # create pie chart
 plt.figure()
-plt.pie(aux.values, labels=aux.index, autopct=lambda pct: func(pct, aux.values))
+explode = (0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05)
+print(len(explode))
+plt.pie(
+    aux.values,
+    labels=aux.index,
+    autopct=lambda pct: func(pct, aux.values),
+    shadow=True,
+    explode=explode,
+)
 plt.show()
 
 # %%
 ## Total hours of Sport
-sports['time'].sum()/pain.shape[0]
+sports["time"].sum() / pain.shape[0]
+
+# %%
+## Still days
+
+sports[sports["sport"] == "None"].shape
+pain.shape
 
 # ### Kite
 
