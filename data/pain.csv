@@ -287,6 +287,9 @@ date,pain, leg_fatigue, total_fatigue, nsaids, colageno,
 3-1-2022, 0, 3, 2, True, False
 4-1-2022, 0, 1, 1, False, True
 5-1-2022, 0, 0, 0, False, False
+6-1-2022, 1, 0, 0, False, False
+7-1-2022, 1, 1, 0, False, False
+
 
 
 
