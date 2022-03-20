@@ -5,6 +5,7 @@ import warnings
 import matplotlib.pyplot as plt
 from matplotlib import rcParams
 import seaborn as sns
+from utils import gradientbars
 
 plt.style.use("seaborn-whitegrid")
 sns.set(style="whitegrid", color_codes=True)
@@ -17,21 +18,8 @@ rcParams["figure.figsize"] = 16, 8
 warnings.filterwarnings("ignore")
 
 
-def gradientbars(bars):
-    grad = np.atleast_2d(np.linspace(0, 1, 256)).T
-    ax = bars[0].axes
-    lim = ax.get_xlim() + ax.get_ylim()
-    for bar in bars:
-        bar.set_zorder(1)
-        bar.set_facecolor("none")
-        x, y = bar.get_xy()
-        w, h = bar.get_width(), bar.get_height()
-        ax.imshow(grad, extent=[x, x + w, y, y + h], aspect="auto", zorder=0)
-    ax.axis(lim)
-
-
 # %%
-# Read files
+# Read Files
 pain = pd.read_csv("data/pain.csv", skipinitialspace=True).drop(columns="Unnamed: 6")
 pain.columns = pain.columns.str.replace(" ", "")
 pain["date"] = pd.to_datetime(pain["date"], dayfirst=True)  # .dt.strftime('%d/%m/%Y')
@@ -49,6 +37,14 @@ sports = pd.read_csv("data/sport.csv", skipinitialspace=True)
 sports.columns = sports.columns.str.replace(" ", "")
 sports["date"] = pd.to_datetime(sports["date"], dayfirst=True)
 sports["sport"] = sports["sport"].str.strip()
+sports["year"] = sports.date.dt.year
+sports["week"] = sports.date.dt.week
+sports["week"] = sports["week"].apply(lambda x: "{0:0>2}".format(x))
+sports.loc[
+    (sports.week == 52) & (sports.year == 2022), "week"
+] = 1  # First week fo 2022 problems
+sports["yearWeek"] = sports["year"].astype(str) + "-" + sports["week"].astype(str)
+
 sports = sports.set_index("date")
 
 full = pd.merge(pain.reset_index(), sports.reset_index())
@@ -59,7 +55,6 @@ full.loc[
     (full.week == 52) & (full.year == 2022), "week"
 ] = 1  # First week fo 2022 problems
 full["yearWeek"] = full["year"].astype(str) + "-" + full["week"].astype(str)
-
 # %%
 # ## Images
 
