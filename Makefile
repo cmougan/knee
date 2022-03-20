@@ -16,10 +16,9 @@ install_some_packages:
 	pip install jedi==0.17.2
 
 run_script:
-	jupyter nbconvert --to script ExploratoryDataAnalysis.ipynb
 	python ExploratoryDataAnalysis.py
-	jupyter nbconvert --to script Models.ipynb
 	python Models.py
+	python SportsAnalysis.py
 gitall:
 	git add .
 	@read -p "Enter commit message: " message; 	git commit -m "$$message"
