@@ -114,7 +114,6 @@ Efecto: Disminucion del dolor en las 4 semanas posteriores.
 
 
 ## Análisis Exploratorio de Datos
-![Evolución Dolor](images/dolor_diario.png "Title")
 ![Evolución Dolor](images/dolor_semanal_carga.png "Title")
 
 
@@ -134,10 +133,15 @@ En la siguiente imagen se muestra un arbol de decisión.
 Las primeras divisiones son suelen tener mayor importancia.
 ![Decision Tree ](images/dt_shift.svg "DT")
 
+La correlacion entre algunas de las variables recogidas la
+![Correlacion](images/corr.png "corr")
 
+# Analisis deportivo realizado
+![Sport](images/accumulated_sport.png "sport")
+<!-- 
 ## Efecto diario del colágeno
 ![Colageno](images/colageno_distribution.png "Title")
-<!-- 
+
 ## Carga deportiva
 [Deporte Acumulado](images/deporte.png "Title") 
 

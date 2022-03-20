@@ -14,7 +14,6 @@ os.chdir("/Users/cmougan/Desktop/knee")
 plt.style.use("seaborn-whitegrid")
 sns.set(style="whitegrid", color_codes=True)
 
-
 rcParams["axes.labelsize"] = 14
 rcParams["xtick.labelsize"] = 12
 rcParams["ytick.labelsize"] = 12
@@ -103,7 +102,8 @@ plt.pie(
     shadow=True,
     explode=explode,
 )
-plt.show()
+plt.savefig("images/accumulated_sport.png")
+
 
 # %%
 ## Total hours of Sport
@@ -125,7 +125,7 @@ plt.title("Kite Weekly Time")
 plt.ylabel("Time (mins)")
 plt.xlabel("Semana")
 ax.tick_params(axis="x", rotation=45)
-plt.show()
+
 
 # %%
 # Crossfit
@@ -139,7 +139,7 @@ plt.title("CrossFit Weekly Time")
 plt.ylabel("Time (mins)")
 plt.xlabel("Semana")
 ax.tick_params(axis="x", rotation=45)
-plt.show()
+
 # %%
 # Natacion
 aux = sports.groupby(["sport", "yearWeek"]).sum().reset_index()
@@ -152,7 +152,6 @@ plt.title("Swim Weekly Time")
 plt.ylabel("Time (mins)")
 plt.xlabel("Semana")
 ax.tick_params(axis="x", rotation=45)
-plt.show()
 
 # %%
 #  Surf
@@ -165,5 +164,3 @@ plt.title("Surf Weekly Time")
 plt.ylabel("Time (mins)")
 plt.xlabel("Semana")
 ax.tick_params(axis="x", rotation=45)
-plt.show()
-
