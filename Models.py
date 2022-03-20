@@ -3,8 +3,8 @@
 
 # #### Libraries and loading
 #%%javascript
-#utils.load_extension("execute_time/ExecuteTime")
-#utils.load_extension("collapsible_headings/main")
+# utils.load_extension("execute_time/ExecuteTime")
+# utils.load_extension("collapsible_headings/main")
 # In[1]:
 
 
@@ -53,9 +53,6 @@ pain.shape
 
 
 # In[ ]:
-
-
-
 
 
 # # Data Engineering
@@ -368,7 +365,10 @@ print("Test ", mean_absolute_error(xgb.predict(X_te), y_te))
 df["pain_shift"] = df.pain - df.pain.shift()
 df_lag = df.dropna().drop(columns="pain")
 X_tr, X_te, y_tr, y_te = train_test_split(
-    df_lag.drop(columns="pain_shift"), df_lag[["pain_shift"]], test_size=0.2, random_state=42
+    df_lag.drop(columns="pain_shift"),
+    df_lag[["pain_shift"]],
+    test_size=0.2,
+    random_state=42,
 )
 
 
@@ -521,7 +521,3 @@ plt.close()
 
 
 # In[ ]:
-
-
-
-
