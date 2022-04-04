@@ -11,14 +11,14 @@ df = pd.read_csv("Suspensos.csv", encoding="utf-8")
 df = df[df["4EB"] != "Quintero Montero, Danelson"]
 # %%
 plt.figure()
-plt.title('Total de suspensos por Alumno/a')
+plt.title("Total de suspensos por Alumno/a")
 df.plot.bar(
     x="4EB",
-    y=["SUSPENSOS EV 1","SUSPENSOS EV 2"],
+    y=["SUSPENSOS EV 1", "SUSPENSOS EV 2"],
     width=0.7,
     linewidth=1,
     edgecolor="black",
-    color = ['yellow','cornflowerblue']
+    color=["yellow", "cornflowerblue"],
 )
 plt.savefig("suspensos.png")
 plt.show()
