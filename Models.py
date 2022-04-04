@@ -30,7 +30,7 @@ warnings.filterwarnings("ignore")
 # In[2]:
 
 
-pain = pd.read_csv("data/pain.csv").drop(columns="Unnamed: 6")
+pain = pd.read_csv("data/pain.csv")
 pain.columns = pain.columns.str.replace(" ", "")
 pain["date"] = pd.to_datetime(pain["date"], dayfirst=True)  # .dt.strftime('%d/%m/%Y')
 pain = pain.set_index("date")
