@@ -511,5 +511,11 @@ date,pain, leg_fatigue, total_fatigue, nsaids, colageno
 13-8-2022, 0, 0, 0, False, False
 14-8-2022, 1, 0, 0, False, True
 15-8-2022, 1, 0, 0, False, True
-16-8-2022, 0, 2, 4, False, True
+16-8-2022, 0, 2, 4 , False, True
+17-8-2022, 0, 3, 3 , False, True
+18-8-2022, 0, 3, 3 , False, True
+19-8-2022, 0, 0, 4 , False, False
+20-8-2022, 0, 0, 4 , False, False
+21-8-2022, 0, 0, 0 , False, False
+22-8-2022, 0, 0, 0 , False, True
 
