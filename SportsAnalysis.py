@@ -78,22 +78,8 @@ colors = sns.color_palette("pastel")[0 : aux.shape[0]]
 
 # create pie chart
 plt.figure()
-explode = (
-    0.05,
-    0.05,
-    0.05,
-    0.05,
-    0.05,
-    0.05,
-    0.05,
-    0.05,
-    0.05,
-    0.05,
-    0.05,
-    0.05,
-    0.05,
-    0.05,
-)
+explode = np.zeros(len(aux.values))
+explode = np.clip(explode, 0.05, 0.05)
 print(len(explode))
 plt.pie(
     aux.values,
