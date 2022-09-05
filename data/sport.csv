@@ -688,3 +688,7 @@ date,sport, total_intensity, knee_intensity, time, notes
 31-8-2022, Body,2,3,45.0,
 1-9-2022, Surf,4,0,120.0,
 2-9-2022, None,0,0,0,
+3-9-2022, Surf,3,1,90.0,
+3-9-2022, Body,3,3,60.0,
+4-9-2022, Run,3,3,30.0,
+5-9-2022, Surf,4,2,120.0,
