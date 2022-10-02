@@ -63,13 +63,15 @@ full["yearWeek"] = full["year"].astype(str) + "-" + full["week"].astype(str)
 
 # %%
 # Select surf kite and body
-aux = full[(full.sport == "Surf") | (full.sport == "Body") | (full.sport == "Kite")]
+aux = full[(full.sport == "Surf") | (full.sport == "Body")]
 # Filter July Agusut september
 aux = aux[
     (aux.date.dt.month == 7) | (aux.date.dt.month == 8) | (aux.date.dt.month == 9)
 ]
 # %%
 aux.groupby(["year", "month"]).time.sum()
+
+
 #######################################
 ### Analysis until here ######
 #######################################
