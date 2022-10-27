@@ -31,5 +31,3 @@ sum_sport_hours:
 	awk -F',' '{sum+=$5;}END{print sum;}' data/sport.csv
 
 
-
-
