@@ -12,7 +12,7 @@
 - Insecure
   
 ## Personality obsesive-compulsive disorder
-OCPD some of the symphtoms that contribute or are basis of this disorder
+Obsessive-compulsive personality disorder is characterized by a pervasive preoccupation with orderliness, perfectionism, and control (with no room for flexibility) that ultimately slows or interferes with completing a task. (OCPD) some of the symphtoms that contribute or are basis of this disorder
 - Compulsitivity
 - Limited range of emotion
 - Perfectionism
@@ -27,7 +27,7 @@ In order to mantain the perfectionism they are worried about order and control. 
 
 **Work**, They tend to overfocus on the taskt that they are doing paying attention in every detail. They never do good time managment as they overly focus on small details, often leaving the most important tasks to the end. When focusing on task they tend to miss the general perspective and other life aspects.
 
-**Other lif aspects**, They are often very dedicated to work forgetting about social an ocio aspects of life. Their general impression is that they do not have time for friends nor por fun activities.
+**Other life aspects**, They are often very dedicated to work forgetting about social an ocio aspects of life. Their general impression is that they do not have time for friends nor por fun activities.
 
 Fun time is normaly organized as an sport activity that they have practiced very hard in order to achieve perfection.
 
