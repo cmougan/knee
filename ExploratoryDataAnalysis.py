@@ -33,7 +33,7 @@ pain.loc[
     (pain.week == 52) & (pain.year == 2022), "week"
 ] = 1  # First week fo 2022 problems
 pain["yearWeek"] = pain["year"].astype(str) + pain["week"].astype(str)
-pain["yearMonth"] = pain["year"].astype(str) +  pain["month"].astype(str)
+pain["yearMonth"] = pain["year"].astype(str) + pain["month"].astype(str)
 
 sports = pd.read_csv("data/sport.csv", skipinitialspace=True)
 sports.columns = sports.columns.str.replace(" ", "")
@@ -48,7 +48,7 @@ sports.loc[
     (sports.week == 52) & (sports.year == 2022), "week"
 ] = 1  # First week fo 2022 problems
 sports["yearWeek"] = sports["year"].astype(str) + sports["week"].astype(str)
-sports["yearMonth"] = sports["year"].astype(str) +sports["month"].astype(str)
+sports["yearMonth"] = sports["year"].astype(str) + sports["month"].astype(str)
 
 sports = sports.set_index("date")
 
@@ -80,16 +80,14 @@ date1 = "2021-18"
 date2 = "2021-27"
 plt.bar(x=date1, height=22, width=0.1, color="k", label="PRP")
 plt.bar(x=date2, height=22, width=0.1, color="k", label="PRP")
-plt.plot(
-    full.groupby("yearWeek").knee_intensity.mean(), label="Entrenamiento rodilla"
-)
+plt.plot(full.groupby("yearWeek").knee_intensity.mean(), label="Entrenamiento rodilla")
 ax.tick_params(axis="x", rotation=45)
 plt.legend()
 plt.savefig("images/dolor_semanal_carga.png")
 # %%
 # Plot Monthly pain and accumulated knee work
 # Data wrangling
-aux = pain.reset_index().sort_values('date')
+aux = pain.reset_index().sort_values("date")
 aux = aux.groupby(["yearMonth"]).mean().reset_index()
 # Init plot
 fig, ax = plt.subplots()
@@ -104,9 +102,7 @@ gradientbars(bar)
 plt.bar(x="202105", height=22, width=0.1, color="k", label="PRP1")
 plt.bar(x="202107", height=22, width=0.1, color="k", label="PRP2")
 plt.bar(x="202207", height=22, width=0.1, color="k", label="PRP3")
-plt.plot(
-    full.groupby("yearMonth").knee_intensity.mean(), label="Entrenamiento rodilla"
-)
+plt.plot(full.groupby("yearMonth").knee_intensity.mean(), label="Entrenamiento rodilla")
 ax.tick_params(axis="x", rotation=45)
 plt.legend()
 plt.savefig("images/dolor_mensual_carga.png")

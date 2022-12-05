@@ -3,12 +3,14 @@ import numpy as np
 import pandas as pd
 
 import os
+
 os.chdir("/Users/cmougan/Desktop/knee")
 
 import matplotlib.pyplot as plt
 from matplotlib import rcParams
 import seaborn as sns
 from utils import gradientbars
+
 plt.style.use("seaborn-whitegrid")
 sns.set(style="whitegrid", color_codes=True)
 rcParams["axes.labelsize"] = 14
@@ -17,6 +19,7 @@ rcParams["ytick.labelsize"] = 12
 rcParams["figure.figsize"] = 16, 8
 
 import warnings
+
 warnings.filterwarnings("ignore")
 # %%
 # Read Files
@@ -32,7 +35,7 @@ pain["month"] = pain["month"].apply(lambda x: "{0:0>2}".format(x))
 pain.loc[
     (pain.week == 52) & (pain.year == 2022), "week"
 ] = 1  # First week fo 2022 problems
-pain["yearWeek"] = pain["year"].astype(str) +  pain["week"].astype(str)
+pain["yearWeek"] = pain["year"].astype(str) + pain["week"].astype(str)
 
 
 sports = pd.read_csv("data/sport.csv", skipinitialspace=True)
@@ -47,8 +50,8 @@ sports["month"] = sports["month"].apply(lambda x: "{0:0>2}".format(x))
 sports.loc[
     (sports.week == 52) & (sports.year == 2022), "week"
 ] = 1  # First week fo 2022 problems
-sports["yearWeek"] = sports["year"].astype(str)  + sports["week"].astype(str)
-sports["yearMonth"] = sports["year"].astype(str)  + sports["month"].astype(str)
+sports["yearWeek"] = sports["year"].astype(str) + sports["week"].astype(str)
+sports["yearMonth"] = sports["year"].astype(str) + sports["month"].astype(str)
 
 sports = sports.set_index("date")
 
@@ -71,7 +74,8 @@ def func(pct, allvals):
     absolute = int(np.round(pct / 100.0 * np.sum(allvals)))
     return "{:.1f}%\n({:d} h)".format(pct, absolute)
 
-aux = sports[sports['year']==2022].groupby(["sport"])["time"].sum()
+
+aux = sports[sports["year"] == 2022].groupby(["sport"])["time"].sum()
 aux
 aux = aux.sort_values()
 aux = aux / 60
@@ -98,8 +102,8 @@ print("Average daily sport in mins: ", sports["time"].sum() / pain.shape[0])
 print("Still days: ", sports[sports["sport"] == "None"].shape[0])
 # %%
 # Kite
-aux = sports.groupby(["yearMonth","sport"]).sum().reset_index()
-aux = pd.merge(aux,aux[aux["sport"] == "Kite"],on='yearMonth',how='left').fillna(0)
+aux = sports.groupby(["yearMonth", "sport"]).sum().reset_index()
+aux = pd.merge(aux, aux[aux["sport"] == "Kite"], on="yearMonth", how="left").fillna(0)
 
 fig, ax = plt.subplots()
 bar = ax.bar(aux.yearMonth.values, aux.time_y.values)
@@ -112,8 +116,8 @@ ax.tick_params(axis="x", rotation=45)
 
 # %%
 # Crossfit
-aux = sports.groupby(["yearMonth","sport"]).sum().reset_index()
-aux = pd.merge(aux,aux[aux["sport"] == "CF"],on='yearMonth',how='left').fillna(0)
+aux = sports.groupby(["yearMonth", "sport"]).sum().reset_index()
+aux = pd.merge(aux, aux[aux["sport"] == "CF"], on="yearMonth", how="left").fillna(0)
 
 fig, ax = plt.subplots()
 bar = ax.bar(aux.yearMonth.values, aux.time_y.values)
@@ -125,8 +129,8 @@ ax.tick_params(axis="x", rotation=45)
 
 # %%
 # Natacion
-aux = sports.groupby(["yearMonth","sport"]).sum().reset_index()
-aux = pd.merge(aux,aux[aux["sport"] == "Swim"],on='yearMonth',how='left').fillna(0)
+aux = sports.groupby(["yearMonth", "sport"]).sum().reset_index()
+aux = pd.merge(aux, aux[aux["sport"] == "Swim"], on="yearMonth", how="left").fillna(0)
 fig, ax = plt.subplots()
 bar = ax.bar(aux.yearMonth.values, aux.time_y.values)
 gradientbars(bar)
@@ -137,8 +141,8 @@ ax.tick_params(axis="x", rotation=45)
 
 # %%
 #  Surf
-aux = sports.groupby(["yearMonth","sport"]).sum().reset_index()
-aux = pd.merge(aux,aux[aux["sport"] == "Surf"],on='yearMonth',how='left').fillna(0)
+aux = sports.groupby(["yearMonth", "sport"]).sum().reset_index()
+aux = pd.merge(aux, aux[aux["sport"] == "Surf"], on="yearMonth", how="left").fillna(0)
 fig, ax = plt.subplots()
 bar = ax.bar(aux.yearMonth.values, aux.time_y.values)
 gradientbars(bar)
