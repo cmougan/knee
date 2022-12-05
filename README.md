@@ -114,7 +114,7 @@ Efecto: Disminucion del dolor en las 4 semanas posteriores.
 
 
 ## Análisis Exploratorio de Datos
-![Evolución Dolor](images/dolor_semanal_carga.png "Title")
+![Evolución Dolor](images/dolor_mensual_carga.png "Title")
 
 
 ## Modelización

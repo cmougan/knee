@@ -28,12 +28,12 @@ pain["year"] = pain.index.year
 pain["week"] = pain.index.week
 pain["month"] = pain.index.month
 pain["week"] = pain["week"].apply(lambda x: "{0:0>2}".format(x))
+pain["month"] = pain["month"].apply(lambda x: "{0:0>2}".format(x))
 pain.loc[
     (pain.week == 52) & (pain.year == 2022), "week"
 ] = 1  # First week fo 2022 problems
-pain["yearWeek"] = pain["year"].astype(str) + "-" + pain["week"].astype(str)
-pain["yearMonth"] = pain["year"].astype(str) + "-" + pain["month"].astype(str)
-
+pain["yearWeek"] = pain["year"].astype(str) + pain["week"].astype(str)
+pain["yearMonth"] = pain["year"].astype(str) +  pain["month"].astype(str)
 
 sports = pd.read_csv("data/sport.csv", skipinitialspace=True)
 sports.columns = sports.columns.str.replace(" ", "")
@@ -43,11 +43,12 @@ sports["year"] = sports.date.dt.year
 sports["week"] = sports.date.dt.week
 sports["month"] = sports.date.dt.month
 sports["week"] = sports["week"].apply(lambda x: "{0:0>2}".format(x))
+sports["month"] = sports["month"].apply(lambda x: "{0:0>2}".format(x))
 sports.loc[
     (sports.week == 52) & (sports.year == 2022), "week"
 ] = 1  # First week fo 2022 problems
-sports["yearWeek"] = sports["year"].astype(str) + "-" + sports["week"].astype(str)
-sports["yearMonth"] = sports["year"].astype(str) + "-" + sports["month"].astype(str)
+sports["yearWeek"] = sports["year"].astype(str) + sports["week"].astype(str)
+sports["yearMonth"] = sports["year"].astype(str) +sports["month"].astype(str)
 
 sports = sports.set_index("date")
 
@@ -58,8 +59,8 @@ full["year"] = full.date.dt.year
 full.loc[
     (full.week == 52) & (full.year == 2022), "week"
 ] = 1  # First week fo 2022 problems
-full["yearWeek"] = full["year"].astype(str) + "-" + full["week"].astype(str)
-full["yearMonth"] = full["year"].astype(str) + "-" + full["month"].astype(str)
+full["yearWeek"] = full["year"].astype(str) + full["week"].astype(str)
+full["yearMonth"] = full["year"].astype(str) + full["month"].astype(str)
 # %%
 # ## Images
 # Plot Weekly pain and accumulated knee work
@@ -80,7 +81,7 @@ date2 = "2021-27"
 plt.bar(x=date1, height=22, width=0.1, color="k", label="PRP")
 plt.bar(x=date2, height=22, width=0.1, color="k", label="PRP")
 plt.plot(
-    full.groupby("yearWeek").knee_intensity.sum() / 3, label="Entrenamiento rodilla"
+    full.groupby("yearWeek").knee_intensity.mean(), label="Entrenamiento rodilla"
 )
 ax.tick_params(axis="x", rotation=45)
 plt.legend()
@@ -88,7 +89,7 @@ plt.savefig("images/dolor_semanal_carga.png")
 # %%
 # Plot Monthly pain and accumulated knee work
 # Data wrangling
-aux = pain.reset_index().sort_values('yearMonth')
+aux = pain.reset_index().sort_values('date')
 aux = aux.groupby(["yearMonth"]).mean().reset_index()
 # Init plot
 fig, ax = plt.subplots()
@@ -99,18 +100,16 @@ plt.xlabel("Año-Semana")
 bar = ax.bar(aux.yearMonth.values, aux.pain.values, label="Dolor Mensual")
 gradientbars(bar)
 # Plot PRPs
-date1 = "2021-5"
-date2 = "2021-7"
-date3 = "2022-7"
-plt.bar(x=date1, height=22, width=0.1, color="k", label="PRP")
-plt.bar(x=date2, height=22, width=0.1, color="k", label="PRP")
-plt.bar(x=date3, height=22, width=0.1, color="k", label="PRP")
+
+plt.bar(x="202105", height=22, width=0.1, color="k", label="PRP1")
+plt.bar(x="202107", height=22, width=0.1, color="k", label="PRP2")
+plt.bar(x="202207", height=22, width=0.1, color="k", label="PRP3")
 plt.plot(
     full.groupby("yearMonth").knee_intensity.mean(), label="Entrenamiento rodilla"
 )
 ax.tick_params(axis="x", rotation=45)
 plt.legend()
-plt.savefig("images/dolor_semanal_carga.png")
+plt.savefig("images/dolor_mensual_carga.png")
 
 
 # %%
@@ -154,32 +153,3 @@ sns.heatmap(
     cbar_kws={"shrink": 0.5},
 )
 plt.savefig("images/corr.png")
-
-
-# %%
-post = pain[pain.index > "2021-05-06"].pain.values
-pre = pain[pain.index < "2021-05-06"].pain.values
-
-plt.figure()
-plt.xlabel("Pain")
-plt.ylabel("Frecuency of pain distribution")
-sns.kdeplot(post, label="post prp")
-sns.kdeplot(pre, label="pre prp")
-plt.legend()
-plt.title("Pain distribution before and after PRP")
-plt.savefig("images/pain_distribution.png")
-
-# %%
-colag = pain[pain["colageno"] == True].pain.values
-no_colag = pain[pain["colageno"] == False].pain.values
-
-plt.figure()
-plt.xlabel("Pain")
-plt.ylabel("Frecuency of pain distribution")
-sns.kdeplot(colag, label="Tomando Colágeno")
-sns.kdeplot(no_colag, label="Sin Colágeno")
-plt.legend()
-plt.title("Pain distribution with and without colageno")
-plt.savefig("images/colageno_distribution.png")
-
-# %%
