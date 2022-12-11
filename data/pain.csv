@@ -611,7 +611,7 @@ date,pain, leg_fatigue, total_fatigue, nsaids, colageno
 21-11-2022, 0, 8, 3, False, False
 22-11-2022, 0, 4, 2, False, False
 23-11-2022, 1, 2, 2, False, False
-24-11-2022, 2, 2, 2, False, Falseq
+24-11-2022, 2, 2, 2, False, False
 25-11-2022, 0, 3, 3, False, False
 26-11-2022, 0, 1, 1, False, False
 27-11-2022, 0, 0, 0, False, False
@@ -625,8 +625,9 @@ date,pain, leg_fatigue, total_fatigue, nsaids, colageno
 5-12-2022, 4, 1, 1, True, False
 6-12-2022, 4, 1, 1, False, False
 7-12-2022, 3, 1, 1, False, False
-8-12-2022, 2, 1, 1, False, False
-9-12-2022, 2, 2, 0, False, False
-10-12-2022, 2, 2, 0, False, False
+8-12-2022, 2, 1, 1, True, True
+9-12-2022, 2, 2, 0, True, True
+10-12-2022, 2, 2, 0, True, True
+11-12-2022, 1, 1, 0, False, True
 
 
