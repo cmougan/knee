@@ -52,7 +52,7 @@ complicado.
 **CONCLUSION**
 Condropatía patelar difusa grado II-III. Condropatía troclear grado I.
 
-[Link al estudio](https://portaldelpaciente.htmedica.com/PortalPaciente/OpenSharedStudyRequest/dfbd3888-b691-41c4-a605-e3a2757bfac8)
+[Link al estudio](https://portaldelpaciente.htmedica.com/PortalPaciente/OpenSharedStudyRequest/e688acbb-965b-4265-9ec9-04352bcf1311)
 
 
 ### Podología (Análisis de la pisada)
