@@ -91,7 +91,7 @@ aux = pain.reset_index().sort_values("date")
 aux = aux.groupby(["yearMonth"]).mean().reset_index()
 # Init plot
 fig, ax = plt.subplots()
-plt.title("Dolor Semanal Acumulado y carga de entrenamiento en rodilla")
+plt.title("Dolor mensual y carga de entrenamiento en rodilla")
 plt.ylabel("Unidades de Dolor")
 plt.xlabel("Año-Semana")
 # Weekly pain

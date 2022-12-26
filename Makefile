@@ -19,6 +19,7 @@ run_script:
 	python ExploratoryDataAnalysis.py
 	python Models.py
 	python SportsAnalysis.py
+	python painStats.py
 gitall:
 	git add .
 	@read -p "Enter commit message: " message; 	git commit -m "$$message"

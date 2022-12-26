@@ -3,15 +3,23 @@
 [![Python Version](https://img.shields.io/github/pipenv/locked/python-version/cmougan/WRI_WellBeing_Data_Layer?style=plastic)](https://github.com/cmougan/WRI_WellBeing_Data_Layer)
 
 # Tratamiento de dolor de condromalacia
+Resumen: este estudio presenta un resumen autoelaborado por Carlos Mougan para el estudio y análisis del dolor de rodilla.
+
+La estructura es la siguiente:
+ - 1. Cuadro clinico con las resonancias magnéticas en la rodilla y conclusión por el radiólog.
+ - 2. Analisis de la pisada.
+ - 3. Infiltraciones de PRP con fechas y analisis del efecto.
+ - 4. Escala de evaluacion del dolor
+ - 5. Monitorización con visualizaciones y analisis de datos del desarrollo temporal.
+
+
+
 
 ## Cuadro Clínico
 
-### Resonacias Magnéticas
-#### 10/11/2020
+### Resonacias Magnética: **10/11/2020**
 
-__Hallazgos__
-
-No se identifica patrón de edema óseo.\
+Hallazgos: No se identifica patrón de edema óseo.\
 Los ligamentos cruzados y colaterales están integros.\
 No se observan alteraciones significativas los meniscos.\
 Lesion condral leve en la superficie de carga de la meseta tibial externa.\
@@ -30,11 +38,9 @@ No existen alteraciones significativas del tendón rotuliano. \
 Lesión condral de inicio en la meseta tibial externa.\
 [Link al estudio](https://portaldelpaciente.htmedica.com/PortalPaciente/OpenSharedStudyRequest/dfbd3888-b691-41c4-a605-e3a2757bfac8)
 
-### 27/07/2021
+### Resonacias Magnética: **27/07/2021**
 
-__HALLAZGOS__
-
-Menisco medial con signos de degeneración mixoide del cuerno posterior. Menisco lateral
+Hallazgos: Menisco medial con signos de degeneración mixoide del cuerno posterior. Menisco lateral
 de morfología e intensidad de señal dentro de la normalidad.
 Compartimento femorotibial medial con interlínea articular conservada, no observando
 edema óseo ni líneas de fractura.
@@ -66,9 +72,7 @@ __Tratamiento:__ Añadir una leve correción en la plantilla del pie derecho[21/
  Más imágenes en (_images/podologo_)
  
 
-### Tratamiento
-
-#### Infiltracion PRP
+### Tratamiento: Infiltracion PRP
 **28/01/2021**
 
 Efecto: Ausencia de dolor durante las 4 semanas siguientes. 
@@ -87,13 +91,17 @@ Al final del informe se aporta visualización y test estadístico sobre los efec
 Efecto: Disminucion del dolor en las 4 semanas posteriores.
 
 
+**7/7/2022**
+Efecto: Disminucion del dolor en las 4 semanas posteriores.
+
+
 
 ## Metodología de evaluación
 
 ### Evaluacion del dolor
 ```
-1: Sensaciones extrañas leves en momentos puntuales del día. 
-2: Sensaciones extrañas en momentos puntuales del día.
+1: Leves molestias en momentos puntuales del día. 
+2: Molestias en momentos puntuales del día.
 3: Presión constante a lo largo del día.
 4: Presión constante a lo largo del día, con momentos de dolor agudo.
 5: Cojera al andar. 
@@ -113,31 +121,34 @@ Efecto: Disminucion del dolor en las 4 semanas posteriores.
 ```
 
 
-## Análisis Exploratorio de Datos
+## Análisis del Dolor
+En esta primera imagen se puede observar $(i)$ las barras el dolor mensual medio de cada día, siguiendo la escala de evaluacion de dolor, $(ii)$ la gráfica azul, representa la media del nivel medio de carga de entrenamiento de la rodilla y $(iii)$ las lines verticales negras las inyecciones de PRP que se han realizado. 
 ![Evolución Dolor](images/dolor_mensual_carga.png "Title")
 
+En esta imagen se puede ver una distribucion del dolor, lo más frequente es dolor 0 o 1. El 60% de los días de los 2 ultimos años ha habido dolor. El 12% de los días ha habido un dolor superior a 2, que implica un dolor agudo. 
+![Dolor diario](images/painStats.png "Title")
 
 ## Modelización
-En esta sección se usa un modelo estadístico para modelizar el problema.
-A continuación se utilizan técnicas de explicación para encontrar patrones.
+En esta sección se usa un modelo estadístico para intentar predecir el dolor diario dado los datos proporcionado. A continuación se utilizan técnicas de explicación para encontrar patrones.
 
 En la imagen inferior se puede ver la contribución total de cada variable
-a las predicciónes del modelo
+a las predicciónes del modelo, un mayor valur implicar una mayor importancia a la hora de predecir la cantidad de dolor diario.
 ![Global Shap](images/global_shap.png "Global feat")
 
-En la imagen inferior se pueden observar la cada contribucióon por dia y variable
-de cada instancia.
+En la imagen inferior se pueden observar la cada contribución por dia y variable
+de cada instancia. Los valores mas hacia la derecha implican que ha habido una mayor contribución de la variable al dolor.
 ![Evolución Dolor](images/summary_shap.png "Summary shap")
-
-En la siguiente imagen se muestra un arbol de decisión. 
-Las primeras divisiones son suelen tener mayor importancia.
-![Decision Tree ](images/dt_shift.svg "DT")
 
 La correlacion entre algunas de las variables recogidas la
 ![Correlacion](images/corr.png "corr")
 
 # Analisis deportivo realizado
+La siguiente figura representa la cantidad de deporte realizado durante los dos últimos años. El deporte más practicado es el CrossFit seguido del Surf.
 ![Sport](images/accumulated_sport.png "sport")
+
+En esta imagen se puede ver la distribución de la cantidad de deporte diaria que practico. Con una media de 90 mins de deporte diario. Es posible calcular la fracción de deporte diario que practico multiplicando por 90 mins por un $36\%$ de Crossfit diario sale entorno 30 mins diario. Nota, están incluidos los 365 días del año. 
+![SportDist](images/sportTimeDistribution.png "SportDist")
+
 <!-- 
 ## Efecto diario del colágeno
 ![Colageno](images/colageno_distribution.png "Title")

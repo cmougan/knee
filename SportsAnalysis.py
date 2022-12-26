@@ -93,6 +93,15 @@ plt.pie(
     explode=explode,
 )
 plt.savefig("images/accumulated_sport.png")
+# %%
+vals = sports.groupby(["date"]).time.sum().values
+plt.figure()
+plt.title("Distribution de tiempo diaro de deporte practicado")
+sns.kdeplot(vals, shade=True, color="r", label="Minutos Deporte")
+plt.vlines(vals.mean(), 0, 0.01, color="k", linestyle="--", label="Media")
+plt.legend()
+plt.savefig("images/sportTimeDistribution.png")
+plt.show()
 
 
 # %%
@@ -150,3 +159,5 @@ plt.title("Surf Monthly Time")
 plt.ylabel("Time (mins)")
 plt.xlabel("Semana")
 ax.tick_params(axis="x", rotation=45)
+
+# %%
