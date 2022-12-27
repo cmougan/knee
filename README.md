@@ -36,7 +36,8 @@ No existe derrame articular en cantidad valorable.\
 Condomalacia rotuliana grado II-III. Engrosamiento del tendón cuadricipital.\
 No existen alteraciones significativas del tendón rotuliano. \
 Lesión condral de inicio en la meseta tibial externa.\
-[Link al estudio](https://portaldelpaciente.htmedica.com/PortalPaciente/OpenSharedStudyRequest/dfbd3888-b691-41c4-a605-e3a2757bfac8)
+[Link al estudio](https://portaldelpaciente.htmedica.com/PortalPaciente/OpenStudyByKeyRequest?id=3ploViv1PT0%3d)
+
 
 ### Resonacias Magnética: **27/07/2021**
 
@@ -58,7 +59,7 @@ complicado.
 **CONCLUSION**
 Condropatía patelar difusa grado II-III. Condropatía troclear grado I.
 
-[Link al estudio](https://portaldelpaciente.htmedica.com/PortalPaciente/OpenSharedStudyRequest/e688acbb-965b-4265-9ec9-04352bcf1311)
+[Link al estudio](https://portaldelpaciente.htmedica.com/PortalPaciente/OpenStudyByKeyRequest?id=ZRTG%2bYNPmIE%3d)
 
 
 ### Podología (Análisis de la pisada)
