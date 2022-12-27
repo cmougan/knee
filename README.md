@@ -16,7 +16,7 @@ La estructura es la siguiente:
 
 
 ## Cuadro Clínico
-Los resultados de las resonancias se puede ver en 
+Los resultados de las resonancias se puede ver en esta carpeta local [Link](https://github.com/cmougan/knee/tree/main/RMresults)
 
 ### Resonacias Magnética: **10/11/2020**
 
