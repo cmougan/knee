@@ -16,6 +16,7 @@ La estructura es la siguiente:
 
 
 ## Cuadro Clínico
+Los resultados de las resonancias se puede ver en 
 
 ### Resonacias Magnética: **10/11/2020**
 
