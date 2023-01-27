@@ -37,10 +37,11 @@ https://portaldelpaciente.htmedica.com/PortalPaciente/OpenStudyByKeyRequest?id=S
 Como objetivo, que no creo que sea posible, me gustaría poder hacer regularmente deporte sin tener dolor. Y alargar al *máximo* mi vida deportiva.
 Mi cantidad de deporte actual es elevada 90m/dia [1], donde los deportes que más practico son CrossFit, KiteSurf, Surf, Natacion, Atletismo [2]. Se que es poco probable, pero quiero hacer todo lo posible para ello.
 
-Actualmente, a modo rehabilitación entreno la fuerza de cuadriceps y gluteos. También tomo Carticure+, pero basado en la evidencia estadística, tiene poco efecto.
+Actualmente, a modo rehabilitación entreno la fuerza de cuadriceps y gluteos. +1 PRP cada 6.12 meses. También tomo Carticure+, pero basado en la evidencia estadística, tiene poco efecto.
 
 El dolor va por ciclos como se puede ver en la gráfica (https://github.com/cmougan/knee/blob/main/images/dolor_mensual_carga.png). Los meses de Diciembre y Enero han sido unusualmente altos.
 
+Me gustaría saber que posibilidades hay de tratamiento más de lo que ya hago.
 
 [1] https://github.com/cmougan/knee/blob/main/images/sportTimeDistribution.png
 [2] https://github.com/cmougan/knee/blob/main/images/accumulated_sport.png
