@@ -73,7 +73,8 @@ en los meniscos.
 La articulación femoropatelar es congruente. Signos de fibrilación con aumento de señal
 T2 del cartílago patelar, sin defectos condrales francos, ni edema del hueso subcondral.
 No existen alteraciones significativas en el aparato extensor.
-## CONCLUSION:
+
+**CONCLUSION**
 Condromalacia rotuliana grado II-III, sin cambios significativos respecto a previo.
 ### Podología (Análisis de la pisada)
  Por Rafael Gonzales Clinica San Sebastian de los Reyes
