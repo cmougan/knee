@@ -60,9 +60,21 @@ complicado.
 **CONCLUSION**
 Condropatía patelar difusa grado II-III. Condropatía troclear grado I.
 
-[Link al estudio](https://portaldelpaciente.htmedica.com/PortalPaciente/OpenStudyByKeyRequest?id=ZRTG%2bYNPmIE%3d)
+### Resonacias Magnética: **10/1/2023**
+Esta resonancia tiene T2 mapping
+[Link al estudio](https://portaldelpaciente.htmedica.com/PortalPaciente/OpenStudyByKeyRequest?id=SY0xSHdgN0o%3d)
 
-
+HALLAZGOS:
+No se observa derrame articular.
+No se aprecian alteraciones de la señal de los elementos óseos incluidos.
+Los ligamentos cruzados y colaterales están íntegros.
+No se identifican alteraciones significativas en ambos compartimentos femorotibiales, ni
+en los meniscos.
+La articulación femoropatelar es congruente. Signos de fibrilación con aumento de señal
+T2 del cartílago patelar, sin defectos condrales francos, ni edema del hueso subcondral.
+No existen alteraciones significativas en el aparato extensor.
+## CONCLUSION:
+Condromalacia rotuliana grado II-III, sin cambios significativos respecto a previo.
 ### Podología (Análisis de la pisada)
  Por Rafael Gonzales Clinica San Sebastian de los Reyes
  ![Análisi de la pisada](images/podologo/heatmap_pisada.jpeg "Title")
