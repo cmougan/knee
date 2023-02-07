@@ -192,3 +192,9 @@ Gráfico de distribución del dolor antes y despues de la prp
 [3] Role of Platelet-Rich Plasma in Articular Cartilage Injury and Disease https://www.thieme-connect.com/products/ejournals/html/10.1055/s-0034-1384672
 
 [4] Chondromalacia Patellae: https://www.physio-pedia.com/Chondromalacia_Patellae
+
+[5] Das, P., Jana, S., & Kumar Nandi, S. (2022). Biomaterial‐Based Therapeutic Approaches to Osteoarthritis and Cartilage Repair Through Macrophage Polarization. The Chemical Record, 22(9), e202200077.https://onlinelibrary.wiley.com/doi/full/10.1002/tcr.202200077?casa_token=S67L5pbY-UQAAAAA%3Ad2lsOYsq32vQPyAgLjdinxHxCRIVzuXD4Wb1Ih_ru-nYzH1wwzOz36nQOa5sDdJmYAZ6hdL9pz9t
+
+[6] Tuan RS, Chen AF, Klatt BA. Cartilage regeneration. J Am Acad Orthop Surg. 2013 May;21(5):303-11. doi: 10.5435/JAAOS-21-05-303. PMID: 23637149; PMCID: PMC4886741. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4886741/
+
+[7] Physiopedia: Chondromalacia Patellae https://www.physio-pedia.com/Chondromalacia_Patellae
