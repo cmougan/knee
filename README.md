@@ -19,7 +19,7 @@ Tengo dolor a diario cuasi constantemente con picos de dolor alto. El dolor me s
 
 Al despertar el dolor no está, sino aparece a los 10-15 mins. 
 Hay posiciones de la rodilla que me duelen mucho. 
-El dolor suele desaparecer tras calentar. 
+El dolor suele desaparecer tras calentar. A veces el dolor articular viene asociado a dolor en el gemelo (poplideo).
 
 Debido a una operacion en el hombro a final de Enero'23 no hago deporte. Dejar de hacer deporte no ha disminuido la cantidad de dolor.
 
@@ -54,6 +54,14 @@ Pasado dos o tres semanas, el dolor disminuyo y me hice otra PRP. El dolor apare
 
  **Conclusion** Incremento del dolor durante los ultimos 3-4 años: sensacion ligamenton rotuliano (2años), dolor interno leve-intermedio (2 años), dolor intermedio-intenso (4meses)
 
+## Preguntas
+- Por que en RM1 solo hay "sensacion gelatinosa" tras hacer deporte y en RM3 hay dolor constante?
+- Es la "sensacion gelatinosa" el mismo problema que el dolor articular?
+
+#### Mis hipotesis.
+Estas son mis teorías, ninguna validez epistémica.
+ - A. Son dolores diferentes. Del primero la PRP me lo recuperó. El segundo es una lesión condral.
+ - B. Es una progresión de dolor debido a un fallo estructural biomecánico.
 ## Cuadro Clínico
 Los resultados de las resonancias se puede ver en esta carpeta local [Link](https://github.com/cmougan/knee/tree/main/RMresults)
 
