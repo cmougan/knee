@@ -2,18 +2,57 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?color=g&style=plastic)](https://opensource.org/licenses/MIT)
 [![Python Version](https://img.shields.io/github/pipenv/locked/python-version/cmougan/WRI_WellBeing_Data_Layer?style=plastic)](https://github.com/cmougan/WRI_WellBeing_Data_Layer)
 
-# Tratamiento de dolor de condromalacia
+# Condropatía
 Resumen: este estudio presenta un resumen autoelaborado por Carlos Mougan para el estudio y análisis del dolor de rodilla.
 
 La estructura es la siguiente:
- - 1. Cuadro clinico con las resonancias magnéticas en la rodilla y conclusión por el radiólog.
- - 2. Analisis de la pisada.
- - 3. Infiltraciones de PRP con fechas y analisis del efecto.
- - 4. Escala de evaluacion del dolor
- - 5. Monitorización con visualizaciones y analisis de datos del desarrollo temporal.
+ - 1. Sintomas
+ - 2. Cuadro clinico con las resonancias magnéticas en la rodilla y conclusión por el radiólog.
+ - 3. Analisis de la pisada.
+ - 4. Infiltraciones de PRP con fechas y analisis del efecto.
+ - 5. Escala de evaluacion del dolor
+ - 6. Monitorización con visualizaciones y analisis de datos del desarrollo temporal.
+
+## Sintomas
+### Actualmente
+Tengo dolor a diario cuasi constantemente con picos de dolor alto. El dolor me suele despertar por la noche, y me impide estar mas de 1h de pie. Cojeo al andar. 
+
+Al despertar el dolor no está, sino aparece a los 10-15 mins. 
+Hay posiciones de la rodilla que me duelen mucho. 
+El dolor suele desaparecer tras calentar. 
+
+Debido a una operacion en el hombro a final de Enero'23 no hago deporte. Dejar de hacer deporte no ha disminuido la cantidad de dolor.
+
+#### Tratamiento actual
+Entreno en el gimnasio fuerza de piernas evitando añadir tensión al cuadriceps. Estiro biceps femoral, isquiotibiables y gemelos 4-5 días a la semana. 
+
+PRP el 23 Febrero.
+### Historial de sintomático
+Hasta 2017 me dediqué a nadar, sin ningún problema. A finales de 2017 empeze a CrossFit.
+
+En 2019 empeze a tener una sensación gelatinosa despues de entrenar en el tendón rotuliano. Acudí al traumatólogo (Noviembre 2020) y me recomendó rehabilitacion y una PRP (Febrero 2021). Ver Resonancia Magnética 1.
+
+<p align="center">
+  <img src="images/rodilla1.jpeg" />
+</p>
+
+En Diciembre'20, Enero'21, Febrero '21 aprendí a hacer KiteSurf y hubo episodios de dolor de rodilla.
+En Febrero me hice la PRP y el dolor desapareció por completo y yo practique mucho Kitesurf.
+
+A las 3-4 semanas de la PRP, aparecío un nuevo dolor MUY intenso. Pero en otra zona diferente. Un dolor mas interno de la rodilla.
+<p align="center">
+  <img src="images/rodilla2.jpeg" />
+</p>
+
+Pasado dos o tres semanas, el dolor disminuyo y me hice otra PRP. El dolor aparecía princpalmente despues de hacer CrossFit y era incomodo y a veces alto, pero en general tolerable.
+
+ Este dolor se ha mantendio constante durante dos años, hasta hace 4 meses.
+
+ Desde hace 4 meses duele constantemente, independientemente de hacer deporte o no. 
+ He dejado de hacer deporte.
 
 
-
+ **Conclusion** Incremento del dolor durante los ultimos 3-4 años: sensacion ligamenton rotuliano (2años), dolor interno leve-intermedio (2 años), dolor intermedio-intenso (4meses)
 
 ## Cuadro Clínico
 Los resultados de las resonancias se puede ver en esta carpeta local [Link](https://github.com/cmougan/knee/tree/main/RMresults)
