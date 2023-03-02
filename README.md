@@ -245,3 +245,5 @@ Gráfico de distribución del dolor antes y despues de la prp
 [6] Tuan RS, Chen AF, Klatt BA. Cartilage regeneration. J Am Acad Orthop Surg. 2013 May;21(5):303-11. doi: 10.5435/JAAOS-21-05-303. PMID: 23637149; PMCID: PMC4886741. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4886741/
 
 [7] Unlike Bone, Cartilage Regeneration Remains Elusive. Science 2012 https://www.science.org/doi/full/10.1126/science.1222454?casa_token=sGJgo9EN1WsAAAAA%3AJgWTXN05c9nkUoN4sOz_Iaov1iCPKEXmgo8s5RfJRJiFZDiJm3NUaHnPXbemJKMCxmhXF-Jsvhcp
+
+[8] Knee Pain Diagnosis https://www.knee-pain-explained.com/knee-pain-diagnosis.html
