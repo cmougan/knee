@@ -33,14 +33,14 @@ PRP el 23 Febrero de 2023.
 ### Historial de sintomático
 Hasta 2017 me dediqué a nadar, sin ningún problema. A finales de 2017 empeze a CrossFit.
 
-En 2019 empeze a tener una sensación gelatinosa despues de entrenar en el tendón rotuliano. Acudí al traumatólogo (Noviembre 2020) y me recomendó rehabilitacion y una PRP (Febrero 2021). Ver Resonancia Magnética 1.
+En 2019 empeze a tener una sensación gelatinosa despues de entrenar en el tendón rotuliano que aparecía con una pequeña inflamación temporal. Acudí al traumatólogo (Noviembre 2020) y me recomendó rehabilitacion y una PRP (Febrero 2021). Ver Resonancia Magnética 1.
 
 <p align="center">
   <img src="images/rodilla1.jpeg" />
 </p>
 
 En los tres meses siguientes (Diciembre'20, Enero'21, Febrero '21) aprendí a hacer KiteSurf y hubo episodios de dolor de rodilla.
-En Febrero me hice la PRP y el dolor desapareció por completo y practique mucho Kitesurf y CrossFit.
+En Febrero me hice la PRP y el dolor  gelationoso y las post-inflamación desapareció por completo y practique mucho Kitesurf y CrossFit.
 
 A las 3-4 semanas de la PRP, aparecío un nuevo dolor MUY intenso. Pero en otra zona diferente. Un dolor mas interno de la rodilla.
 
