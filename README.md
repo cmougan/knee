@@ -2,7 +2,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?color=g&style=plastic)](https://opensource.org/licenses/MIT)
 [![Python Version](https://img.shields.io/github/pipenv/locked/python-version/cmougan/WRI_WellBeing_Data_Layer?style=plastic)](https://github.com/cmougan/WRI_WellBeing_Data_Layer)
 
-# Condropatía
+# Dolor de rodilla
 Resumen: este estudio presenta un resumen autoelaborado por Carlos Mougan para el estudio y análisis del dolor de rodilla.
 
 La estructura es la siguiente:
@@ -18,15 +18,18 @@ La estructura es la siguiente:
 Tengo dolor a diario cuasi constantemente con picos de dolor alto. El dolor me suele despertar por la noche, y me impide estar mas de 1h de pie. Cojeo al andar. 
 
 Al despertar el dolor no está, sino aparece a los 10-15 mins. 
-Hay posiciones de la rodilla que me duelen mucho. 
-El dolor suele desaparecer tras calentar. A veces el dolor articular viene asociado a dolor en el gemelo (poplideo).
+Hay posiciones de la rodilla en reposo que me duelen. 
+El dolor suele desaparecer tras calentar. A veces el dolor articular viene asociado a atrofia muscular en el gemelo (poplideo).
 
 Debido a una operacion en el hombro a final de Enero'23 no hago deporte. Dejar de hacer deporte no ha disminuido la cantidad de dolor.
+
+La rodilla derecha cruje y hace ruido al doblarla. La rodilla izquierda no cruje. 
+Hace mas ruido en la extension de cuadriceps que en la contracción (sentadilla).
 
 #### Tratamiento actual
 Entreno en el gimnasio fuerza de piernas evitando añadir tensión al cuadriceps. Estiro biceps femoral, isquiotibiables y gemelos 4-5 días a la semana. 
 
-PRP el 23 Febrero.
+PRP el 23 Febrero de 2023.
 ### Historial de sintomático
 Hasta 2017 me dediqué a nadar, sin ningún problema. A finales de 2017 empeze a CrossFit.
 
@@ -36,21 +39,25 @@ En 2019 empeze a tener una sensación gelatinosa despues de entrenar en el tend�
   <img src="images/rodilla1.jpeg" />
 </p>
 
-En Diciembre'20, Enero'21, Febrero '21 aprendí a hacer KiteSurf y hubo episodios de dolor de rodilla.
-En Febrero me hice la PRP y el dolor desapareció por completo y yo practique mucho Kitesurf.
+En los tres meses siguientes (Diciembre'20, Enero'21, Febrero '21) aprendí a hacer KiteSurf y hubo episodios de dolor de rodilla.
+En Febrero me hice la PRP y el dolor desapareció por completo y practique mucho Kitesurf y CrossFit.
 
 A las 3-4 semanas de la PRP, aparecío un nuevo dolor MUY intenso. Pero en otra zona diferente. Un dolor mas interno de la rodilla.
+
 <p align="center">
   <img src="images/rodilla2.jpeg" />
 </p>
 
-Pasado dos o tres semanas, el dolor disminuyo y me hice otra PRP. El dolor aparecía princpalmente despues de hacer CrossFit y era incomodo y a veces alto, pero en general tolerable.
+Pasado dos o tres semanas, el dolor disminuyo y me hice otra PRP. El dolor aparecía principalmente despues de hacer CrossFit y era incomodo y a veces alto, pero en general tolerable.
 
  Este dolor se ha mantendio constante durante dos años, hasta hace 4 meses.
 
  Desde hace 4 meses duele constantemente, independientemente de hacer deporte o no. 
  He dejado de hacer deporte.
 
+<p align="center">
+  <img src="images/rodilla3.jpeg" />
+</p>
 
  **Conclusion** Incremento del dolor durante los ultimos 3-4 años: sensacion ligamenton rotuliano (2años), dolor interno leve-intermedio (2 años), dolor intermedio-intenso (4meses)
 
@@ -59,9 +66,11 @@ Pasado dos o tres semanas, el dolor disminuyo y me hice otra PRP. El dolor apare
 - Es la "sensacion gelatinosa" el mismo problema que el dolor articular?
 
 #### Mis hipotesis.
-Estas son mis teorías, ninguna validez epistémica.
- - A. Son dolores diferentes. Del primero la PRP me lo recuperó. El segundo es una lesión condral.
- - B. Es una progresión de dolor debido a un fallo estructural biomecánico.
+Estas son mis hypotésis:
+
+ - **A.** Son dolores diferentes. Del primero la PRP me recuperó. El segundo es una lesión condral generada por micro-traumatismos de aprender Kite.
+  
+ - **B.** Es una progresión de dolor debido a un fallo estructural biomecánico.
 ## Cuadro Clínico
 Los resultados de las resonancias se puede ver en esta carpeta local [Link](https://github.com/cmougan/knee/tree/main/RMresults)
 
