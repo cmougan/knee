@@ -17,9 +17,8 @@ La estructura es la siguiente:
 ### Actualmente
 Tengo dolor a diario cuasi constantemente con picos de dolor alto. El dolor me suele despertar por la noche, y me impide estar mas de 1h de pie. Cojeo al andar. 
 
-Al despertar el dolor no está, sino aparece a los 10-15 mins. 
 Hay posiciones de la rodilla en reposo que me duelen. 
-El dolor suele desaparecer tras calentar. A veces el dolor articular viene asociado a atrofia muscular en el gemelo (poplideo).
+El dolor desaparece tras calentar. A veces el dolor articular viene asociado a atrofia muscular en el gemelo (poplideo).
 
 Debido a una operacion en el hombro a final de Enero'23 no hago deporte. Dejar de hacer deporte no ha disminuido la cantidad de dolor.
 
@@ -39,7 +38,7 @@ En 2019 empeze a tener una sensación gelatinosa despues de entrenar en el tend�
   <img src="images/rodilla1.jpeg" />
 </p>
 
-En los tres meses siguientes (Diciembre'20, Enero'21, Febrero '21) aprendí a hacer KiteSurf y hubo episodios de dolor de rodilla.
+En los tres meses siguientes (Diciembre'20, Enero'21, Febrero '21) aprendí a hacer KiteSurf y empezó a aparecer el dolor de rodilla.
 En Febrero me hice la PRP y el dolor  gelationoso y las post-inflamación desapareció por completo y practique mucho Kitesurf y CrossFit.
 
 A las 3-4 semanas de la PRP, aparecío un nuevo dolor MUY intenso. Pero en otra zona diferente. Un dolor mas interno de la rodilla.
@@ -53,7 +52,7 @@ Pasado dos o tres semanas, el dolor disminuyo y me hice otra PRP. El dolor apare
  Este dolor se ha mantendio constante durante dos años, hasta hace 4 meses.
 
  Desde hace 4 meses duele constantemente, independientemente de hacer deporte o no. 
- He dejado de hacer deporte.
+ Consecuencia, he dejado de hacer deporte. Y me cuesta estar mucho tiempo de pié o en la calle.
 
 <p align="center">
   <img src="images/rodilla3.jpeg" />
