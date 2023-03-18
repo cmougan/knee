@@ -15,7 +15,7 @@ La estructura es la siguiente:
 
 ## Sintomas
 ### Actualmente
-Tengo dolor a diario cuasi constantemente con picos de dolor alto. El dolor me suele despertar por la noche, y me impide estar mas de 1h de pie. Cojeo al andar. 
+Tengo dolor a diario cuasi constantemente con picos de dolor alto. El dolor me suele despertar por la noche. Si es un pico deo dolor alto cojeo al andar. 
 
 Hay posiciones de la rodilla en reposo que me duelen. 
 El dolor desaparece tras calentar. A veces el dolor articular viene asociado a atrofia muscular en el gemelo (poplideo).
