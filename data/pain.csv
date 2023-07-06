@@ -840,3 +840,5 @@ date,knee_pain,pain_shoulder, leg_fatigue, total_fatigue, nsaids, colageno
 2-7-2023,1,1,0,0, False, False
 3-7-2023,1,1,0,0, False, False
 4-7-2023,1,1,0,0, False, False
+5-7-2023,1,1,1,0, False, False
+6-7-2023,2,1,1,1, False, True
