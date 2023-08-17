@@ -255,3 +255,7 @@ Gráfico de distribución del dolor antes y despues de la prp
 [7] Unlike Bone, Cartilage Regeneration Remains Elusive. Science 2012 https://www.science.org/doi/full/10.1126/science.1222454?casa_token=sGJgo9EN1WsAAAAA%3AJgWTXN05c9nkUoN4sOz_Iaov1iCPKEXmgo8s5RfJRJiFZDiJm3NUaHnPXbemJKMCxmhXF-Jsvhcp
 
 [8] Knee Pain Diagnosis https://www.knee-pain-explained.com/knee-pain-diagnosis.html
+
+[9] Failure of cartilage regeneration: emerging hypotheses and related therapeutic strategies. Nature Reviews Rheumatology https://www.nature.com/articles/s41584-023-00979-5
+
+[10] The synovial environment steers cartilage deterioration and regeneration. Science Advances. https://www.science.org/doi/full/10.1126/sciadv.ade4645
