@@ -890,6 +890,9 @@ date,knee_pain,pain_shoulder, leg_fatigue, total_fatigue, nsaids, colageno
 21-8-2023,2,0,0,0, False, False
 22-8-2023,1,0,0,0, False, False
 23-8-2023,1,1,0,0, False, False
-24-8-2023,3,1,0,0, False, False
-25-8-2023,1,2,0,0, False, False
+24-8-2023,3,1,1,0, False, False
+25-8-2023,1,2,3,0, False, False
+26-8-2023,3,3,1,0, False, False
+27-8-2023,2,3,0,0, False, False
+28-8-2023,0,3,0,0, False, False
 #date,knee_pain,pain_shoulder, leg_fatigue, total_fatigue, nsaids, colageno
