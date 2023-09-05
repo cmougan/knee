@@ -108,3 +108,22 @@ plt.show()
 
 
 # %%
+window_size = 180
+df["smoothed_knee_pain"] = (
+    df["knee_pain"].rolling(window=window_size).mean()
+)
+# Plot pain distribution with smoothing
+plt.figure(figsize=(10, 6))
+plt.title("Dolor diario (con smoothing)")
+plt.plot(
+    df.index,
+    df["smoothed_knee_pain"],
+    color="b",
+    label=f"Dolor ({window_size}-days MA)",
+)
+plt.xlabel("Mes")
+plt.ylabel("Dolor Rodilla")
+plt.legend()
+plt.show()
+
+# %%
