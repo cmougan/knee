@@ -108,7 +108,7 @@ plt.show()
 
 
 # %%
-window_size = 180
+window_size = 30
 df["smoothed_knee_pain"] = (
     df["knee_pain"].rolling(window=window_size).mean()
 )
