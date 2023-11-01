@@ -10,7 +10,7 @@ date,sport, total_intensity, knee_intensity, time, notes
 2-4-2021, Swim,2,1,30.0,
 3-4-2021, Yoga,1,1,30.0,
 3-4-2021, Kite,5,7,90.0,
-4-4-2021, Bici,2,3,90.0,
+4-4-2021, Bike,2,3,90.0,
 5-4-2021, Swim,2,1,30.0,
 5-4-2021, CF,4,3,60.0,
 6-4-2021, Swim,3,2,60.0,
@@ -1184,4 +1184,6 @@ date,sport, total_intensity, knee_intensity, time, notes
 28-10-2023, None,0,0,0,
 29-10-2023, None,0,0,0,
 30-10-2023, Swim,1,2,60.0,
+31-10-2023, Body,2,3,60.0,
+1-11-2023, Bike,1,3,60.0,
 date,sport, total_intensity, knee_intensity, time, notes
