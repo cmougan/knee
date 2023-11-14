@@ -1197,4 +1197,7 @@ date,sport, total_intensity, knee_intensity, time, notes
 10-11-2023, CF,1,1,60.0,
 11-11-2023, CF,1,1,60.0,
 12-11-2023, None,0,0,0,
+13-11-2023, Swim,1,2,60.0,
+14-11-2023, Swim,1,2,60.0,
+14-11-2023, Body,1,2,60.0,
 date,sport, total_intensity, knee_intensity, time, notes
