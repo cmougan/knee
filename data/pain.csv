@@ -973,5 +973,10 @@ date,knee_pain,pain_shoulder, leg_fatigue, total_fatigue, nsaids, colageno
 13-11-2023,0,0,0,0, False, True
 14-11-2023,0,0,0,0, False, True
 15-11-2023,0,1,0,0, False, True
-
+16-11-2023,0,2,0,0, False, True
+17-11-2023,0,3,0,0, False, True
+18-11-2023,0,2,0,0, False, True
+19-11-2023,0,0,0,0, False, True
+20-11-2023,0,0,0,0, False, True
+21-11-2023,0,0,0,0, False, True
 #date,knee_pain,pain_shoulder, leg_fatigue, total_fatigue, nsaids, colageno
