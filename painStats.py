@@ -17,9 +17,9 @@ df.index = pd.to_datetime(df.index, format="%d-%m-%Y")
 df["knee_pain"] = pd.to_numeric(df["knee_pain"])
 # %%
 # How many days I have pain>1
-print("Dias con dolor>1: {}".format(len(df[df["knee_pain"] > 1])))
+print("Dias con dolor>=1: {}".format(len(df[df["knee_pain"] >= 1])))
 print("Out of {} days".format(len(df)))
-print("Percentage: {:.2f}%".format(len(df[df["knee_pain"] > 1]) / len(df) * 100))
+print("Percentage: {:.2f}%".format(len(df[df["knee_pain"] >= 1]) / len(df) * 100))
 # %%
 # Plot pain distribution
 plt.figure(figsize=(10, 6))
