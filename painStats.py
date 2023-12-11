@@ -32,6 +32,30 @@ plt.savefig("images/painStats.png")
 plt.legend()
 plt.show()
 # %%
+aux = df["knee_pain"].value_counts().sort_index()
+# Replace 0 with "No Pain"
+aux.index = aux.index.astype(str).str.replace("0", "(0) No Pain")
+aux.index = aux.index.astype(str).str.replace("1", "(1) Punctual Pain")
+aux.index = aux.index.astype(str).str.replace("2", "(2) Strong \n Punctual Pain")
+aux.index = aux.index.astype(str).str.replace("3", "(3) Constant Pain")
+aux.index = aux.index.astype(str).str.replace("4", "(4) Strong \n Constant Pain")
+aux.index = aux.index.astype(str).str.replace("5", "(5) Pain Walking")
+aux.index = aux.index.astype(str).str.replace("6", "(6) Medication")
+aux.index = aux.index.astype(str).str.replace("7", "(7) Medication")
+# Plot Aux
+plt.figure(figsize=(10, 6))
+plt.bar(aux.index, aux.values, color="r", label="Dolor")
+plt.title("Pain Distribution over {} days".format(len(df)))
+plt.xlabel("")
+plt.ylabel("Days")
+plt.xticks(rotation=30)
+# Add in the bars the percentage
+for i, v in enumerate(aux.values):
+    plt.text(i - 0.3, v + 0.5, "{:.2f}%".format(v / len(df) * 100))
+plt.savefig("images/painStats2.png")
+
+
+# %%
 surgery_date = pd.to_datetime("28-4-2023", format="%d-%m-%Y")
 # %%
 # Get 180 days before surgery

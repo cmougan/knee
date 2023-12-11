@@ -195,8 +195,8 @@ Efecto: Disminucion del dolor en las 4 semanas posteriores.
 En esta primera imagen se puede observar $(i)$ las barras el dolor mensual medio de cada día, siguiendo la escala de evaluacion de dolor, $(ii)$ la gráfica azul, representa la media del nivel medio de carga de entrenamiento de la rodilla y $(iii)$ las lines verticales negras las inyecciones de PRP que se han realizado. 
 ![Evolución Dolor](images/dolor_mensual_carga.png "Title")
 
-En esta imagen se puede ver una distribucion del dolor, lo más frequente es dolor 0 o 1. El 60% de los días de los 2 ultimos años ha habido dolor. El 12% de los días ha habido un dolor superior a 2, que implica un dolor agudo. 
-![Dolor diario](images/painStats.png "Title")
+En esta imagen se puede ver una distribucion del dolor, lo más frequente es dolor 0 o 1. 
+![Dolor diario](images/painStats2.png "Title")
 
 ## Modelización
 En esta sección se usa un modelo estadístico para intentar predecir el dolor diario dado los datos proporcionado. A continuación se utilizan técnicas de explicación para encontrar patrones.
