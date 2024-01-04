@@ -1010,6 +1010,19 @@ date,knee_pain,pain_shoulder, leg_fatigue, total_fatigue, nsaids, colageno
 20-12-2023,1,1,0,0, False, False
 21-12-2023,3,1,0,0, False, False
 22-12-2023,2,1,0,0, False, True
+23-12-2023,2,2,0,0, False, True
+24-12-2023,2,1,0,0, False, True
+25-12-2023,1,0,0,0, False, True
+26-12-2023,1,1,0,0, False, True
+27-12-2023,1,1,0,0, False, True
+28-12-2023,1,1,0,0, False, True
+29-12-2023,1,1,0,0, False, True
+30-12-2023,1,1,0,0, False, True
+31-12-2023,1,1,0,0, False, True
+1-1-2024,1,1,0,0, False, True
+2-1-2024,1,1,0,0, False, True
+3-1-2024,1,1,0,0, False, True
+
 
 
 #date,knee_pain,pain_shoulder, leg_fatigue, total_fatigue, nsaids, colageno
