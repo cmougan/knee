@@ -1041,6 +1041,13 @@ date,knee_pain,pain_shoulder, leg_fatigue, total_fatigue, nsaids, colageno
 20-1-2024,1,1,1,1, False, True
 21-1-2024,1,0,0,0, False, True
 22-1-2024,0,1,0,0, False, True
+23-1-2024,0,3,0,0, False, True
+24-1-2024,3,0,0,0, False, True
+25-1-2024,4,0,0,0, False, False
+26-1-2024,1,0,0,0, False, False
+27-1-2024,1,0,0,0, False, False
+28-1-2024,1,0,0,0, False, False
+29-1-2024,0,2,0,0, False, True
 
 
 
