@@ -1308,4 +1308,9 @@ date,sport, total_intensity, knee_intensity, time, notes
 18-2-2024, None,0,0,0,  
 19-2-2024, None,0,0,0,  
 20-2-2024, None,0,0,0,   
+21-2-2024, Surf,7,0,210.0
+22-2-2024, Swim,1,1,30.0,
+22-2-2024, CF,1,1,30,
+23-2-2024, CF,3,0,30,
+23-2-2024, Swim,6,1,60.0,
 date,sport, total_intensity, knee_intensity, time, notes
