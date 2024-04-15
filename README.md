@@ -142,6 +142,14 @@ __Tratamiento:__ Añadir una leve correción en la plantilla del pie derecho[21/
  Más imágenes en (_images/podologo_)
  
 
+### Radiografias (March 2023)
+
+![Radiografias](images/CEMTRO/RadRodilla1.png)
+![Radiografias](images/CEMTRO/RadRodilla2.png)
+![Radiografias](images/CEMTRO/RadRodilla3.png)
+### Hombro
+![Radiografias](images/CEMTRO/RadHombro1.png)
+![Radiografias](images/CEMTRO/RadHombro2.png)
 ### Tratamiento: Infiltracion PRP
 **28/01/2021**
 
