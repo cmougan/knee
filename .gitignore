@@ -141,3 +141,4 @@ calm/*.csv
 *resultadoCSV*
 *ml_task_v2*
 *pred_to_prod*
+example.py
